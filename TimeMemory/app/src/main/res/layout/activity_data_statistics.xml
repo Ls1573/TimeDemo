@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/activity_common_title"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/common_14dp"
+        android:id="@+id/i_create"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/mine_ll"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_12dp"
+            android:layout_weight="1"
+            android:text="@string/i_create_editorial"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <TextView
+            android:id="@+id/i_create_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/i_add"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/mine_ll"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/common_1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_12dp"
+            android:layout_weight="1"
+            android:text="@string/i_add_editoral"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <TextView
+            android:id="@+id/i_add_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/my_friend"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/mine_ll"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/common_1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_12dp"
+            android:layout_weight="1"
+            android:text="@string/my_friend_number"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <TextView
+            android:id="@+id/my_friend_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/i_release"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/mine_ll"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/common_1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_12dp"
+            android:layout_weight="1"
+            android:text="@string/i_release_memory_number"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <TextView
+            android:id="@+id/i_release_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/i_add_other"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/mine_ll"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/common_1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_12dp"
+            android:layout_weight="1"
+            android:text="@string/i_add_other_memory_number"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <TextView
+            android:id="@+id/i_add_other_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/other_supplement"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/mine_ll"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/common_1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_12dp"
+            android:layout_weight="1"
+            android:text="@string/other_supplement_my_memory_number"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <TextView
+            android:id="@+id/other_supplement_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:text=""
+            />
+    </LinearLayout>
+
+</LinearLayout>

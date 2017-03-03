@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/common_70dp">
+
+    <RelativeLayout
+        android:layout_width="@dimen/common_16dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/common_5dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/memory_line"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@id/time_from_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_5dp"
+            android:text="白倩倩"
+            android:textColor="@color/browen_BB"
+            android:textSize="@dimen/tv_16_sp"
+            />
+
+        <TextView
+            android:id="@+id/time_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_10dp"
+            android:gravity="top"
+            android:maxLines="2"
+            android:text="测试数据"
+            android:textColor="@color/grey_48"
+            android:textSize="@dimen/tv_14_sp"
+            />
+
+        <com.time.memory.gui.nineGridImage.NineGridImageView
+            android:id="@id/time_imsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_title_tv"
+            android:layout_marginRight="@dimen/common_35dp"
+            app:hasborder="true"
+            app:imgGap="5dp"
+            app:maxSize="3"
+            app:showStyle="grid"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_imsg"
+            android:layout_marginBottom="@dimen/common_4dp"
+            android:layout_marginTop="@dimen/common_2dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@id/memory_pic_tv"
+                style="@style/common_time_tv"
+                android:drawableLeft="@drawable/memory_photo"
+                android:paddingBottom="@dimen/common_5dp"
+                android:paddingRight="@dimen/common_5dp"
+                android:paddingTop="@dimen/common_5dp"
+                android:text="0"
+                />
+
+            <TextView
+                android:id="@id/memory_fork_tv"
+                style="@style/common_time_tv2"
+                android:drawableLeft="@drawable/memory_fork"
+                android:text="0"
+                />
+
+            <TextView
+                android:id="@id/memory_comment_tv"
+                style="@style/common_time_tv2"
+                android:drawableLeft="@drawable/memory_comment"
+                android:text="0"
+                />
+
+            <TextView
+                android:id="@id/memory_add_tv"
+                style="@style/common_time_tv2"
+                android:drawableLeft="@drawable/memory_add"
+                android:text="0"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/time_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_20dp"
+            android:text="2016-9-6"
+            android:textColor="@color/grey_9D"
+            android:textSize="@dimen/tv_14_sp"
+            />
+    </LinearLayout>
+</LinearLayout>

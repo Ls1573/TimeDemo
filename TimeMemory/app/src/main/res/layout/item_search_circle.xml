@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:id="@id/circle_letter_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_35dp"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/common_14dp"
+        android:text="A"
+        android:textColor="@color/browen"
+        android:textSize="@dimen/tv_14_sp"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@id/circle_constant_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_below="@id/circle_letter_tv"
+        android:background="@drawable/mine_ll"
+        >
+
+        <ImageView
+            android:id="@id/circle_pic_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_12dp"
+            android:src="@drawable/circie_mine"
+            app:border_color="@color/grey_E4"
+            app:border_width="00dp"
+
+            />
+
+        <TextView
+            android:id="@id/circle_constant_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_10dp"
+            android:layout_toRightOf="@id/circle_pic_iv"
+            android:text="@string/circle_new"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_16_sp"/>
+
+        <View
+            android:id="@id/view_line"
+            style="@style/common_line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

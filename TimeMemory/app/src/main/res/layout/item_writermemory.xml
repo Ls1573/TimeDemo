@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="2dp"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/common_28dp"
+              android:paddingRight="@dimen/common_28dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_22dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@id/writer_add_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/writer_add"/>
+
+        <ImageView
+            android:id="@id/writer_delete_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_20dp"
+            android:src="@drawable/writer_delete"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <com.time.memory.gui.sixGridImage.SixGridImageWriterView
+        android:id="@id/writer_grid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y160"
+        android:layout_marginTop="@dimen/common_14dp"
+        android:background="@color/white"
+        app:imgGap="2dp"/>
+
+    <com.time.memory.gui.WriterEditText
+        android:id="@id/writer_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="left|top"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:minHeight="@dimen/common_100dp"
+        android:padding="@dimen/common_14dp"
+        android:textColor="@color/common_font_black"
+        android:textColorHint="@color/gray_A0"
+        android:textSize="@dimen/tv_14_sp"
+        app:hintText="@string/addmemory_hint"
+        app:imagewidth="@dimen/common_18dp"
+        app:textColor="@color/gray_A0"
+        app:textSize="@dimen/tv_14_sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@id/writer_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_14dp"
+            android:text="2016.10.06"
+            android:textColor="@color/grey_9F"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <TextView
+            android:id="@id/writer_loc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:drawableLeft="@drawable/loc"
+            android:drawablePadding="@dimen/common_5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="@string/writer_loc_tv"
+            android:maxWidth="100dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/grey_9F"
+            android:textColorHint="@color/grey_9F"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <TextView
+            android:id="@id/writer_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="0/0"
+            android:textColor="@color/grey_48"
+            android:textSize="@dimen/tv_14_sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

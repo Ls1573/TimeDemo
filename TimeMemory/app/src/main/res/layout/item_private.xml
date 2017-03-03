@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mine_ll"
+                android:paddingBottom="@dimen/common_5dp"
+                android:paddingRight="@dimen/common_12dp"
+                android:paddingTop="@dimen/common_5dp">
+
+    <RelativeLayout
+        android:id="@id/message_new_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/common_5dp">
+
+        <ImageView
+            android:id="@id/message_pic_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_10dp"
+            android:layout_marginLeft="@dimen/common_14dp"
+            android:layout_marginRight="@dimen/common_10dp"
+            android:layout_marginTop="@dimen/common_10dp"
+            android:paddingRight="@dimen/common_2dp"
+            android:src="@drawable/notice"/>
+
+        <ImageView
+            android:id="@id/message_new_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/message_pic_iv"
+            android:layout_marginTop="@dimen/common_7dp"
+            android:src="@drawable/red_dot"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/message_title_tv"
+        style="@style/common_tv"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_12dp"
+        android:layout_toRightOf="@id/message_new_rl"
+        android:text="白欠钱"
+        android:textColor="@color/black_2C"/>
+
+    <TextView
+        android:id="@id/message_date_tv"
+        style="@style/common_tv"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/common_12dp"
+        android:singleLine="true"
+        android:text="16-08-25"
+        android:textColor="@color/gray_A2"
+        android:textSize="@dimen/tv_12_sp"/>
+
+
+    <TextView
+        android:id="@id/message_new_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_title_tv"
+        android:layout_marginRight="@dimen/common_50dp"
+        android:layout_marginTop="@dimen/common_2dp"
+        android:layout_toRightOf="@id/message_new_rl"
+        android:singleLine="true"
+        android:text="在XX记忆提到了你"
+        android:textColor="@color/gray_A2"
+        android:textSize="@dimen/tv_13_sp"/>
+</RelativeLayout>
+

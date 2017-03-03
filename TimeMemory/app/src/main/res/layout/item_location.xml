@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/common_60dp"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/common_14dp">
+
+    <TextView
+        android:id="@id/location_city_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_59dp"
+        android:gravity="center_vertical"
+        android:text="不显示位置"
+        android:textColor="@color/common_font_black"
+        android:textSize="@dimen/tv_16_sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@id/location_desc_tv"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:gravity="bottom"
+        android:text="大连纳米大厦"
+        android:textColor="@color/common_font_black"
+        android:textSize="@dimen/tv_15_sp"
+        />
+
+    <TextView
+        android:id="@id/location_address_tv"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="不显示位置"
+        android:textColor="@color/gray_A0"
+        android:textSize="@dimen/tv_13_sp"
+        />
+
+    <View style="@style/common_line"/>
+</LinearLayout>

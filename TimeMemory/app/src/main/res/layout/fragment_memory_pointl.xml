@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/memory_title_rl"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.time.memory.gui.sixGridImage.SixGridImageView
+                android:id="@id/writer_grid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y160"
+                android:layout_marginBottom="@dimen/common_14dp"
+                android:layout_marginLeft="@dimen/common_16dp"
+                android:layout_marginRight="@dimen/common_16dp"
+                android:layout_marginTop="@dimen/common_10dp"
+                app:imgGap="2dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_16dp"
+                android:layout_marginRight="@dimen/common_16dp"
+                >
+
+                <TextView
+                    android:id="@id/memoryp_auther_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yellow_CA"
+                    android:textSize="@dimen/tv_14_sp"
+                    />
+
+                <TextView
+                    android:id="@id/memoryp_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/memoryp_auther_tv"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/grey_9B"
+                    android:textSize="@dimen/tv_12_sp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@id/memoryp_desc_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_16dp"
+                android:layout_marginRight="@dimen/common_16dp"
+                android:layout_marginTop="@dimen/common_8dp"
+                android:lineSpacingExtra="@dimen/common_1dp"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/grey_48"
+                android:textSize="@dimen/tv_14_sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_14dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/memoryp_fork_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pointheart"
+                    />
+
+                <ImageView
+                    android:id="@id/memoryp_add_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/common_14dp"
+                    android:layout_marginRight="@dimen/common_14dp"
+                    android:src="@drawable/pointadd"
+                    />
+
+                <ImageView
+                    android:id="@id/memoryp_shared_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pointshared"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/memoryp_priase_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_14dp"
+                android:gravity="center"
+                android:text="@string/memory_priase_"
+                android:textColor="@color/black_54"
+                android:textSize="@dimen/tv_12_sp"
+                android:visibility="visible"
+                />
+
+            <com.time.memory.gui.MyGridView
+                android:id="@id/grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_20dp"
+                android:layout_marginRight="@dimen/common_20dp"
+                android:layout_marginTop="@dimen/common_14dp"
+                android:columnWidth="@dimen/common_10dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="9"
+                android:verticalSpacing="@dimen/common_8dp"
+                android:visibility="gone"
+                />
+
+            <View
+                style="@style/common_line"
+                android:layout_height="@dimen/common_3dp"
+                android:layout_marginTop="@dimen/common_14dp"
+                />
+
+            <TextView
+                android:id="@id/memoryp_comment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_16dp"
+                android:layout_marginTop="@dimen/common_14dp"
+                android:text="@string/memory_comment"
+                android:textColor="@color/black_54"
+                android:textSize="@dimen/tv_12_sp"
+                android:visibility="visible"
+                />
+
+            <ImageView
+                android:id="@id/memoryp_nocomment_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/common_10dp"
+                android:layout_marginTop="@dimen/common_10dp"
+                android:src="@drawable/comment_tag"/>
+
+            <TextView
+                android:id="@id/memoryp_nocomment_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_40dp"
+                android:gravity="center"
+                android:text="@string/memory_comment_hint"
+                android:textColor="@color/grey_4D"
+                />
+
+            <com.time.memory.gui.MyListView
+                android:id="@id/swipe_target"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/memoryp_comment_tv"
+                android:layout_marginBottom="@dimen/common_14dp"
+                android:layout_marginLeft="@dimen/common_10dp"
+                android:layout_marginRight="@dimen/common_5dp"
+                android:layout_marginTop="@dimen/common_8dp"
+                android:listSelector="@color/transparent"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_F8"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:id="@id/memoryp_send_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_35dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_16dp"
+            android:layout_marginRight="@dimen/common_16dp"
+            android:background="@drawable/memory_comment_bg"
+            android:hint="评论"
+            android:imeOptions="actionSend"
+            android:maxLength="250"
+            android:paddingLeft="@dimen/common_6dp"
+            android:paddingRight="@dimen/common_6dp"
+            android:singleLine="true"
+            android:textColor="@color/common_font_black"
+            android:textColorHint="@color/black_27"
+            android:textSize="@dimen/tv_14_sp"/>
+    </LinearLayout>
+</LinearLayout>

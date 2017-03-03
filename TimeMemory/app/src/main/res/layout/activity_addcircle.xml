@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@id/circle_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_48dp"
+            android:layout_marginLeft="@dimen/common_14dp"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:layout_marginTop="@dimen/common_48dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:hint="@string/circle_create_hint"
+            android:inputType="text"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="@color/common_font_black"
+            android:textColorHint="@color/gray_A0"
+            />
+
+        <View
+            style="@style/common_line"
+            android:layout_marginBottom="@dimen/common_38dp"
+            android:layout_marginLeft="@dimen/common_14dp"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:background="@color/black_15"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/app_submit"
+        android:layout_width="@dimen/common_250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_38dp"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:padding="@dimen/common_10dp"
+        android:text="@string/app_create"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_18dp"/>
+
+</LinearLayout>

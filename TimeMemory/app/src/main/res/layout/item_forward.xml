@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/circle_check_rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_48dp"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@id/circle_check"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_14dp"
+        android:layout_marginRight="@dimen/common_14dp"
+        android:background="@null"
+        android:src="@drawable/forward_checkbox"
+        />
+
+    <TextView
+        android:id="@id/circle_constant_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_10dp"
+        android:text="联系人"
+        android:textColor="@color/common_font_black"
+        android:textSize="@dimen/tv_16_sp"/>
+
+    <View
+        android:id="@id/view_line"
+        style="@style/common_line"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

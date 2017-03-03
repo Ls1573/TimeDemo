@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/common_10dp"
+                android:paddingTop="@dimen/common_12dp">
+
+    <TextView
+        android:id="@id/message_time_tv"
+        style="@style/common_msg_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/common_6dp"
+        android:layout_marginLeft="@dimen/common_20dp"
+        android:layout_marginRight="@dimen/common_3dp"
+        android:text="20:05"/>
+
+    <TextView
+        android:id="@id/message_date_tv"
+        style="@style/common_msg_tv"
+        android:layout_toLeftOf="@id/message_time_tv"
+        android:text="16-08-25"/>
+
+    <ImageView
+        android:id="@id/message_pic_iv"
+        android:layout_width="@dimen/x36"
+        android:layout_height="@dimen/x36"
+        android:layout_below="@id/message_time_tv"
+        android:layout_marginLeft="@dimen/common_14dp"
+        android:layout_marginRight="@dimen/common_10dp"
+        android:layout_marginTop="@dimen/common_2dp"
+        android:src="@drawable/notice"/>
+
+    <TextView
+        android:id="@id/message_new_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_time_tv"
+        android:layout_toRightOf="@id/message_pic_iv"
+        android:background="@drawable/chart_info"
+        android:minHeight="@dimen/common_100dp"
+        android:paddingBottom="@dimen/common_10dp"
+        android:textColor="@color/black_87"
+        android:paddingLeft="@dimen/common_20dp"
+        android:text="你和她有5个共通好友，他们是..."/>
+</RelativeLayout>
+

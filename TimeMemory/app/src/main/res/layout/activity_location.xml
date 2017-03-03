@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+    <RelativeLayout
+        android:id="@id/tag_input_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/grey_F8"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="@dimen/common_12dp"
+        android:paddingRight="@dimen/common_12dp"
+        >
+
+        <TextView
+            android:id="@id/app_submit"
+            android:layout_width="@dimen/common_60dp"
+            android:layout_height="@dimen/common_35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/memory_comment_bg"
+            android:gravity="center"
+            android:text="@string/app_confirm"
+            android:textColor="@color/common_font_black"
+            />
+
+        <EditText
+            android:id="@id/location_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_6dp"
+            android:layout_toLeftOf="@id/app_submit"
+            android:background="@drawable/memory_comment_bg"
+            android:hint="请输入地址"
+            android:imeOptions="actionDone"
+            android:paddingLeft="@dimen/common_6dp"
+            android:paddingRight="@dimen/common_6dp"
+            android:singleLine="true"
+            android:textColor="@color/common_font_black"
+            android:textColorHint="@color/black_27"
+            android:textSize="@dimen/tv_14_sp"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

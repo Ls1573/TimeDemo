@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/mine_ll"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:paddingLeft="@dimen/common_14dp"
+                android:paddingTop="@dimen/common_10dp">
+
+
+    <ImageView
+        android:id="@id/search_pic_iv"
+        android:layout_width="@dimen/common_40dp"
+        android:layout_height="@dimen/common_40dp"
+        android:layout_marginBottom="@dimen/common_10dp"
+        android:layout_marginRight="@dimen/common_10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/circie_mine"
+        />
+
+    <TextView
+        android:id="@id/search_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/search_pic_iv"
+        android:singleLine="true"
+        android:text="哈哈哈"
+        android:textColor="@color/common_font_black"
+        android:textSize="@dimen/common_14dp"
+        />
+
+    <TextView
+        android:id="@id/search_phone_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_name_tv"
+        android:layout_marginTop="@dimen/common_5dp"
+        android:layout_toRightOf="@id/search_pic_iv"
+        android:singleLine="true"
+        android:text="13500780439"
+        android:textColor="@color/grey_82"
+        android:textSize="@dimen/common_13dp"
+        />
+
+    <View
+        style="@style/common_line"
+        android:layout_below="@id/search_pic_iv"
+        />
+</RelativeLayout>

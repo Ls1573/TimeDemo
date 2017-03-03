@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_60dp"
+        >
+
+        <RelativeLayout
+            android:id="@id/memory_pic_rl"
+            android:layout_width="@dimen/x55"
+            android:layout_height="@dimen/y53"
+            android:layout_marginLeft="@dimen/common_90dp"
+            android:layout_marginRight="@dimen/common_18dp"
+            android:background="@drawable/memory_bg_other">
+
+            <com.time.memory.gui.nineGridImage.NineGridImageView
+                android:id="@id/group_imsg"
+                android:layout_width="@dimen/x35"
+                android:layout_height="@dimen/x35"
+                android:layout_below="@id/time_title_tv"
+                android:layout_marginLeft="@dimen/common_7dp"
+                android:layout_marginTop="@dimen/common_26dp"
+                app:imgGap="0dp"
+                app:maxSize="4"
+                app:showStyle="fill"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@id/group_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_20dp"
+            android:layout_toRightOf="@id/memory_pic_rl"
+            android:textColor="@color/black_41"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@id/group_admin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group_name_tv"
+            android:layout_marginTop="@dimen/common_10dp"
+            android:layout_toRightOf="@id/memory_pic_rl"
+            android:text="@string/group_creater"
+            android:textColor="@color/black_43"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/app_submit"
+        android:layout_width="@dimen/common_250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nice_spinner_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_80dp"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:padding="@dimen/common_10dp"
+        android:text="@string/group_apply"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_18dp"/>
+</LinearLayout>

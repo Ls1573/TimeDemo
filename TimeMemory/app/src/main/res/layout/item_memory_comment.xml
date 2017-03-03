@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/common_12dp"
+    android:paddingRight="@dimen/common_12dp"
+    >
+
+    <TextView
+        android:id="@id/memoryp_comments_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_40dp"
+        android:layout_marginTop="@dimen/common_5dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/grey_48"
+        />
+
+    <ImageView
+        android:id="@id/memoryp_head_iv"
+        android:layout_width="@dimen/common_40dp"
+        android:layout_height="@dimen/common_40dp"
+        android:layout_below="@id/memoryp_comments_tv"
+        android:layout_marginRight="@dimen/common_10dp"
+        android:layout_marginTop="@dimen/common_1dp"
+        android:src="@drawable/login_photo"
+        />
+
+    <TextView
+        android:id="@id/memoryp_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/memoryp_comments_tv"
+        android:layout_toRightOf="@id/memoryp_head_iv"
+        android:maxWidth="280dp"
+        android:singleLine="true"
+        android:textColor="@color/yellow_DE"
+        android:textSize="@dimen/tv_14_sp"/>
+
+    <TextView
+        android:id="@id/memoryp_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/memoryp_name_tv"
+        android:layout_below="@id/memoryp_name_tv"
+        android:layout_marginTop="@dimen/common_5dp"
+        android:layout_toLeftOf="@id/memoryp_comment_iv"
+        android:layout_toRightOf="@id/memoryp_head_iv"
+        android:textColor="@color/grey_48"
+        android:textSize="@dimen/tv_14_sp"/>
+
+    <TextView
+        android:id="@id/memoryp_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/memoryp_info_tv"
+        android:layout_below="@id/memoryp_info_tv"
+        android:layout_marginBottom="@dimen/common_5dp"
+        android:layout_marginRight="@dimen/common_5dp"
+        android:layout_marginTop="@dimen/common_5dp"
+        android:layout_toLeftOf="@id/memoryp_comment_iv"
+        android:layout_toRightOf="@id/memoryp_head_iv"
+        android:drawablePadding="@dimen/common_3dp"
+        android:text="2010.00.00"
+        android:textColor="@color/grey_96"
+        android:textSize="@dimen/tv_12_sp"/>
+
+    <ImageView
+        android:id="@id/memoryp_comment_iv"
+        android:layout_width="@dimen/common_35dp"
+        android:layout_height="@dimen/common_30dp"
+        android:layout_below="@id/memoryp_comments_tv"
+        android:layout_marginLeft="@dimen/common_8dp"
+        android:layout_marginRight="@dimen/common_8dp"
+        android:layout_marginTop="@dimen/common_2dp"
+        android:layout_toLeftOf="@+id/memoryp_more_iv"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/memoryp_more_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/memoryp_comments_tv"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/common_2dp"
+        android:paddingBottom="@dimen/common_10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="@dimen/common_5dp"
+        android:paddingTop="@dimen/common_5dp"
+        android:src="@drawable/menu"/>
+
+    <View
+        android:id="@id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:layout_below="@id/memoryp_date_tv"
+        android:layout_marginBottom="@dimen/common_5dp"
+        android:layout_toRightOf="@id/memoryp_head_iv"
+        android:background="@color/grey_E6"
+        />
+</RelativeLayout>

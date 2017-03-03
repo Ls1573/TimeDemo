@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+    <com.time.memory.gui.ClearEditText
+        android:id="@id/circle_search_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_marginTop="@dimen/common_10dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="@dimen/common_10dp"
+        android:drawableRight="@drawable/list_filter_close_button_img"
+        android:gravity="center_vertical"
+        android:hint="@string/search_friend"
+        android:paddingLeft="@dimen/common_14dp"
+        android:paddingRight="@dimen/common_12dp"
+        android:singleLine="true"
+        android:textColor="@color/common_font_black"
+        android:imeOptions="actionDone"
+        android:textColorHint="@color/grey_9FD"
+        android:textSize="@dimen/tv_14_sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/swipe_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/common_1dp"
+        android:overScrollMode="never"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@id/swipe_target_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ListView
+            android:id="@id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+
+        <TextView
+            android:id="@id/tv_letter_overlay"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/overlay_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <com.time.memory.gui.SideLetterBar
+            android:id="@id/tv_side_letter_bar"
+            android:layout_width="@dimen/common_20dp"
+            android:layout_height="@dimen/common_350dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/common_50dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

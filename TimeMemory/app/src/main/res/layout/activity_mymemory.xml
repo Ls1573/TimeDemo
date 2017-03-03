@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+    <com.time.memory.gui.indicator.MagicIndicator
+        android:id="@id/tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_45dp"
+        android:layout_below="@id/common_title_ll"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@id/view_line"
+        style="@style/common_line"
+        android:layout_below="@id/tabs"
+        android:visibility="gone"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/view_line"
+        android:visibility="gone"/>
+
+    <com.time.memory.gui.loading.LoadingView
+        android:id="@id/app_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/memory_popup"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_16dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@id/memory_writer_tv"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:drawableLeft="@drawable/memory_writer"
+            android:drawablePadding="@dimen/common_6dp"
+            android:gravity="center"
+            android:text="@string/memory_writer"
+            android:textColor="@color/popu_tv_bg"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@id/memory_createG_tv"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:drawableLeft="@drawable/memory_createg"
+            android:drawablePadding="@dimen/common_6dp"
+            android:gravity="center"
+            android:text="@string/memory_createG"
+            android:textColor="@color/popu_tv_bg"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:id="@id/memory_addfriend_tv"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:drawableLeft="@drawable/memory_addfriend"
+            android:drawablePadding="@dimen/common_6dp"
+            android:gravity="center"
+            android:text="@string/memory_addfriend"
+            android:textColor="@color/popu_tv_bg"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:id="@id/memory_sacn_tv"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:drawableLeft="@drawable/memory_sacn"
+            android:drawablePadding="@dimen/common_6dp"
+            android:gravity="center"
+            android:text="@string/memory_sacn"
+            android:textColor="@color/popu_tv_bg"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</LinearLayout>

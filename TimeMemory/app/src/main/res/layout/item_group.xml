@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/common_48dp"
+    android:background="@drawable/mine_ll"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@id/group_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_18dp"
+        android:layout_marginRight="@dimen/common_14dp"
+        android:background="@null"
+        android:button="@drawable/com_checkbox" />
+
+    <TextView
+        android:id="@id/group_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高一三班(40)"
+        android:textColor="@color/grey_48"
+        android:textSize="@dimen/tv_16_sp" />
+
+</LinearLayout>

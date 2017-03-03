@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="datePickerStyle" format="reference"/>
+
+    <declare-styleable name="DatePicker">
+        <attr name="dp_startYear" format="integer"/>
+        <attr name="dp_endYear" format="integer"/>
+        <attr name="dp_spinnersShown" format="boolean"/>
+        <attr name="dp_calendarViewShown" format="boolean"/>
+        <attr name="dp_minDate" format="string"/>
+        <attr name="dp_maxDate" format="string"/>
+        <attr name="dp_internalLayout" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="timeline_style">
+        <attr name="marker" format="color|reference"/>
+        <attr name="line" format="color|reference"/>
+        <attr name="marker_size" format="dimension"/>
+        <attr name="timer_size" format="dimension"/>
+        <attr name="line_size" format="dimension"/>
+        <attr name="line_orientation" format="dimension|reference"/>
+        <attr name="markerInCenter" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingUpPanelLayout">
+        <attr name="umanoPanelHeight" format="dimension"/>
+        <attr name="umanoShadowHeight" format="dimension"/>
+        <attr name="umanoParallaxOffset" format="dimension"/>
+        <attr name="umanoFadeColor" format="color"/>
+        <attr name="umanoFlingVelocity" format="integer"/>
+        <attr name="umanoDragView" format="reference"/>
+        <attr name="umanoScrollableView" format="reference"/>
+        <attr name="umanoOverlay" format="boolean"/>
+        <attr name="umanoClipPanel" format="boolean"/>
+        <attr name="umanoAnchorPoint" format="float"/>
+        <attr name="umanoInitialState" format="enum">
+            <enum name="expanded" value="0"/>
+            <enum name="collapsed" value="1"/>
+            <enum name="anchored" value="2"/>
+            <enum name="hidden" value="3"/>
+        </attr>
+        <attr name="umanoScrollInterpolator" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="ToggleButton">
+        <attr name="bWidth" format="dimension"/>
+        <attr name="offBorderColor" format="reference|color"/>
+        <attr name="offColor" format="reference|color"/>
+        <attr name="onColor" format="reference|color"/>
+        <attr name="spotColor" format="reference|color"/>
+        <attr name="animate" format="reference|boolean"/>
+        <attr name="isDefaultOn" format="reference|boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="GFFloatingActionButton">
+        <attr name="fabColorPressed" format="color"/>
+        <attr name="fabColorNormal" format="color"/>
+        <attr name="fabIcon" format="reference"/>
+        <attr name="fabTitle" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension"/>
+        <attr name="android:divider"/>
+        <attr name="android:requiresFadingEdge"/>
+        <attr name="android:fadingEdgeLength"/>
+    </declare-styleable>
+
+    <declare-styleable name="NineGridImageView">
+        <attr name="singleImgSize" format="dimension"/>
+        <attr name="imgGap" format="dimension"/>
+        <attr name="deWidth" format="dimension"/>
+        <attr name="dePadding" format="dimension"/>
+        <attr name="maxSize" format="integer"/>
+        <attr name="showStyle" format="enum">
+            <enum name="grid" value="0"/>
+            <enum name="fill" value="1"/>
+        </attr>
+        <attr name="hasborder" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlowView">
+        <attr name="tcvBackground" format="reference"/>
+        <attr name="tcvTextColor" format="color"/>
+        <attr name="tcvBorder" format="dimension"/>
+        <attr name="tcvTextSize" format="integer"/>
+        <attr name="tcvItemBorderVertical" format="dimension"/>
+        <attr name="tcvItemBorderHorizontal" format="dimension"/>
+        <attr name="tcvShowEndText" format="boolean"/>
+        <attr name="tcvEndText" format="string"/>
+        <attr name="tcvTagResId" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TagView">
+        <attr name="tagBorder" format="dimension"/>
+        <attr name="tagTextSize" format="integer"/>
+        <attr name="tagItemBorderVertical" format="dimension"/>
+        <attr name="tagItemBorderHorizontal" format="dimension"/>
+        <attr name="tagTagResId" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlowImageView">
+        <attr name="fimgGap" format="dimension"/>
+        <attr name="fmaxSize" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="writerEdit">
+        <attr name="imagewidth" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="hintText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="floatingActionButtonColor" format="color|reference"/>
+        <attr name="floatingActionButtonSize" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="floatingActionButtonImplicitElevation" format="boolean"/>
+        <attr name="floatingActionButtonShadow" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="superslim_LayoutManager">
+        <attr name="slm_headerDisplay">
+            <flag name="inline" value="0x03"/>
+            <flag name="start" value="0x01"/>
+            <flag name="end" value="0x02"/>
+            <flag name="overlay" value="0x04"/>
+            <flag name="sticky" value="0x08"/>
+        </attr>
+        <attr name="slm_section_layoutManager" format="enum|string">
+            <enum name="linear" value="0x01"/>
+            <enum name="grid" value="0x02"/>
+            <enum name="staggered_grid" value="0x03"/>
+        </attr>
+        <attr name="slm_section_marginStart" format="enum|dimension">
+            <enum name="match_header" value="-1"/>
+        </attr>
+        <attr name="slm_section_marginEnd" format="enum|dimension">
+            <enum name="match_header" value="-1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="superslim_GridSLM">
+        <attr name="slm_grid_columnWidth" format="dimension"/>
+        <attr name="slm_grid_numColumns" format="enum|integer">
+            <enum name="auto_fit" value="-1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="all" value="3"/>
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+
+    <declare-styleable name="ActionSheets">
+        <attr name="actionSheetStyle" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="ActionSheet">
+        <attr name="actionSheetBackground" format="color|reference"/>
+        <attr name="cancelButtonBackground" format="color|reference"/>
+        <attr name="otherButtonBackground" format="color|reference"/>
+        <attr name="cancelButtonTextColor" format="color|reference"/>
+        <attr name="otherButtonTextColor" format="color|reference"/>
+        <attr name="actionSheetPadding" format="dimension|reference"/>
+        <attr name="otherButtonSpacing" format="dimension|reference"/>
+        <attr name="cancelButtonMarginTop" format="dimension|reference"/>
+        <attr name="actionSheetTextSize" format="dimension|reference"/>
+    </declare-styleable>
+    <attr name="floatingActionButtonStyle" format="reference"/>
+    <attr name="icActionEdit" format="reference"/>
+    <attr name="swipeBackStyle" format="reference"/>
+    <declare-styleable name="SwipeBack">
+        <attr name="sbContentBackground" format="reference"/>
+        <attr name="sbSwipeBackBackground" format="reference"/>
+        <attr name="sbSwipeBackSize" format="dimension"/>
+        <attr name="sbDividerEnabled" format="boolean"/>
+        <attr name="sbDividerSize" format="dimension"/>
+        <attr name="sbDividerAsShadowColor" format="color"/>
+        <attr name="sbDivider" format="reference"/>
+        <attr name="sbBezelSize" format="dimension"/>
+        <attr name="sbMaxAnimationDuration" format="integer"/>
+        <attr name="sbDrawOverlay" format="boolean"/>
+        <attr name="sbTransformer" format="string"/>
+        <attr name="sbSwipeBackPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+            <enum name="start" value="4"/>
+            <enum name="end" value="5"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="NumberPicker">
+        <attr name="ntextColor" format="color"/>
+        <attr name="ntextlineColor" format="color"/>
+        <attr name="ntextSize" format="float|dimension"/>
+        <attr name="startNumber" format="integer"/>
+        <attr name="endNumber" format="integer"/>
+        <attr name="currentNumber" format="integer"/>
+        <attr name="verticalSpacing" format="dimension"/>
+        <attr name="flagText" format="string|reference"/>
+        <attr name="flagTextSize" format="dimension"/>
+        <attr name="flagTextColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="rowNumber" format="integer"/>
+    </declare-styleable>
+
+    <attr name="cropImageStyle" format="reference"/>
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color"/>
+        <attr name="showThirds" format="boolean"/>
+        <attr name="showCircle" format="boolean"/>
+        <attr name="showHandles">
+            <enum name="changing" value="0"/>
+            <enum name="always" value="1"/>
+            <enum name="never" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialLockView">
+        <attr name="LOCK_COLOR" format="color"/>
+        <attr name="WRONG_COLOR" format="color"/>
+        <attr name="CORRECT_COLOR" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="MemoryFlowView">
+        <attr name="FlowBorderVertical" format="dimension"/>
+        <attr name="FlowBorderHorizontal" format="dimension"/>
+        <attr name="FlowResId" format="reference"/>
+        <attr name="FlowTvColor" format="reference|color"/>
+        <attr name="FlowTvSize" format="reference|dimension"/>
+        <attr name="FlowFill" format="boolean"/>
+    </declare-styleable>
+</resources>

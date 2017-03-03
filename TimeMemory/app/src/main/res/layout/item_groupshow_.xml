@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/choose_friend_bg"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+
+    <TextView
+        android:id="@id/circle_constant_tv"
+        android:layout_width="@dimen/common_40dp"
+        android:layout_height="@dimen/common_40dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/browen_76"
+        android:textSize="@dimen/tv_14_sp"/>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/common_30dp"
+    android:layout_marginRight="@dimen/common_30dp">
+
+    <TextView
+        android:id="@id/memoryd_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_14dp"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/common_3dp"
+        android:textColor="@color/black_54"
+        android:textSize="@dimen/tv_18_sp"
+        tools:text="测试"/>
+
+    <com.time.memory.gui.MemoryTagView
+        android:id="@id/add_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/memoryd_title_tv"
+        android:layout_marginTop="@dimen/common_6dp"
+        app:FlowBorderHorizontal="@dimen/common_3dp"
+        app:FlowBorderVertical="@dimen/common_5dp"
+        app:FlowFill="true"
+        app:FlowResId="@layout/item_my_memorydetail"
+        app:FlowTvColor="@color/yellow_CF"
+        app:FlowTvSize="@dimen/tv_14_sp"
+        />
+
+    <TextView
+        android:id="@id/memoryd_tag_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_tag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/common_6dp"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/common_3dp"
+        android:textColor="@color/yellow_CF"
+        android:textSize="@dimen/tv_14_sp"
+        tools:text="圈子"/>
+
+    <ImageView
+        android:id="@+id/item_memory_head_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/memoryd_tag_tv"
+        android:layout_marginBottom="@dimen/common_8dp"
+        android:layout_marginTop="@dimen/common_10dp"
+        android:background="@color/grey_DF"/>
+
+    <TextView
+        android:id="@+id/item_memory_head_view_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_memory_head_view_line"
+        android:text="by "
+        android:textColor="@color/grey_97"
+        android:textSize="@dimen/tv_14_sp"/>
+
+    <TextView
+        android:id="@id/memoryd_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_memory_head_view_line"
+        android:layout_toRightOf="@id/item_memory_head_view_by"
+        android:text="@string/app_name"
+        android:textColor="@color/yellow_CF"
+        android:textSize="@dimen/tv_14_sp"/>
+
+    <TextView
+        android:id="@id/memoryd_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_memory_head_view_line"
+        android:text="2000-00-00"
+        android:textColor="@color/grey_85"
+        android:textSize="@dimen/tv_13_sp"/>
+</RelativeLayout>

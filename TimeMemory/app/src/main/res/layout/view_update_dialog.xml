@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/common_250dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/clear_search_history_dialog_bg"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@id/update_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/common_14dp"
+        android:layout_marginLeft="@dimen/common_20dp"
+        android:layout_marginRight="@dimen/common_16dp"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:drawableLeft="@drawable/version_up"
+        android:drawablePadding="@dimen/common_5dp"
+        android:textColor="@color/black_41"
+        android:textSize="@dimen/tv_18_sp"
+        />
+
+    <TextView
+        android:id="@id/update_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_14dp"
+        android:layout_marginLeft="@dimen/common_22dp"
+        android:layout_marginRight="@dimen/common_16dp"
+        android:lineSpacingExtra="@dimen/common_6dp"
+        android:maxLines="10"
+        android:minHeight="@dimen/common_45dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="@color/black_54"
+        android:textSize="@dimen/tv_14_sp"/>
+
+    <View
+        style="@style/common_line"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_marginLeft="@dimen/common_16dp"
+        android:layout_marginRight="@dimen/common_16dp"
+        >
+
+        <TextView
+            android:id="@id/update_dialog_close"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/version_cancle"
+            android:textColor="@color/browen_D7"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <View
+            android:layout_width="@dimen/common_divider_height"
+            android:layout_height="match_parent"
+            android:background="@color/grey_divider"
+            />
+
+        <TextView
+            android:id="@id/update_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/version_up"
+            android:textColor="@color/browen_D7"
+            android:textSize="@dimen/tv_14_sp"/>
+    </LinearLayout>
+
+</LinearLayout>

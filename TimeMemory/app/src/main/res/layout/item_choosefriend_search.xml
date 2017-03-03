@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@id/searchView_ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/y30"
+    android:orientation="vertical">
+
+    <com.time.memory.gui.MyGridView
+        android:id="@id/mgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/choose_bm_bg"
+        android:horizontalSpacing="@dimen/common_5dp"
+        android:listSelector="@android:color/transparent"
+        android:minHeight="@dimen/common_70dp"
+        android:numColumns="7"
+        android:padding="@dimen/common_10dp"
+        android:verticalSpacing="@dimen/common_5dp"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="@dimen/common_10dp"
+        android:gravity="center_vertical"
+        android:hint="@string/search_friend"
+        android:imeOptions="actionDone"
+        android:paddingLeft="@dimen/common_14dp"
+        android:paddingRight="@dimen/common_18dp"
+        android:singleLine="true"
+        android:textColor="@color/common_font_black"
+        android:textSize="@dimen/tv_14_sp"/>
+
+</LinearLayout>

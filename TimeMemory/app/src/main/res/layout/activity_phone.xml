@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:animateLayoutChanges="true"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@id/app_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/common_10dp"
+        android:src="@drawable/image_back"
+        />
+
+    <ImageView
+        android:id="@id/login_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/common_80dp"
+        android:src="@drawable/register_logo"
+        />
+
+    <TextView
+        android:id="@id/nice_spinner_rl"
+        android:layout_width="90dp"
+        android:layout_height="@dimen/common_40dp"
+        android:layout_below="@id/login_iv"
+        android:layout_marginLeft="@dimen/common_14dp"
+        android:layout_marginTop="@dimen/common_50dp"
+        android:background="@drawable/common_bm_bg"
+        android:gravity="center_vertical|left"
+        android:text="+86"
+        android:textColor="@color/browen_3E"
+        android:textSize="@dimen/tv_16_sp"/>
+
+
+    <com.time.memory.gui.ClearEditText
+        android:id="@id/register_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/login_iv"
+        android:layout_marginLeft="@dimen/common_14dp"
+        android:layout_marginRight="@dimen/common_14dp"
+        android:layout_marginTop="@dimen/common_50dp"
+        android:layout_toRightOf="@id/nice_spinner_rl"
+        android:background="@drawable/common_bm_bg"
+        android:drawablePadding="@dimen/common_10dp"
+        android:drawableRight="@drawable/list_filter_close_button_img"
+        android:hint="@string/login_phone_notice"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColor="@color/browen_3E"
+        android:textColorHint="@color/browen_DF"
+        android:textSize="@dimen/tv_16_sp"/>
+
+
+    <TextView
+        android:id="@+id/app_submit"
+        android:layout_width="@dimen/common_250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nice_spinner_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/common_60dp"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:padding="@dimen/common_10dp"
+        android:text="@string/register_next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_18dp"/>
+
+
+</RelativeLayout>

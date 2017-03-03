@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/common_30dp"
+    >
+
+    <ImageView
+        android:id="@id/memoryp_praise_iv"
+        android:layout_width="@dimen/common_30dp"
+        android:layout_height="@dimen/common_30dp"
+        />
+
+    <com.time.memory.gui.MyTextView
+        android:id="@id/memoryd_fork_tv"
+        android:layout_width="@dimen/common_30dp"
+        android:layout_height="@dimen/common_30dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/choose_friend_bg"
+        android:gravity="center"
+        android:text="球球"
+        android:textColor="@color/browen_76"
+        android:textSize="@dimen/tv_11_sp"/>
+
+    <TextView
+        android:id="@id/memoryp_praise_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_30dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/memoryp_praise_iv"
+        android:gravity="center"
+        android:textColor="@color/grey_48"
+        android:textSize="@dimen/tv_12_sp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

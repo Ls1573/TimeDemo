@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:id="@id/circle_letter_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_35dp"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/common_14dp"
+        android:text="A"
+        android:textColor="@color/browen"
+        android:textSize="@dimen/tv_14_sp"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@id/circle_check_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_below="@id/circle_letter_tv"
+        android:background="@drawable/mine_ll"
+        >
+
+        <ImageView
+            android:id="@id/circle_pic_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_14dp"
+            android:src="@drawable/login_photo"
+            />
+
+        <TextView
+            android:id="@id/circle_constant_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_10dp"
+            android:layout_toRightOf="@id/circle_pic_iv"
+            android:text="联系人"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_16_sp"/>
+
+        <TextView
+            android:id="@id/contacts_add_tv"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_16dp"
+            android:background="@drawable/contacts_add_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/common_5dp"
+            android:paddingTop="@dimen/common_5dp"
+            android:text="@string/contacts_add"
+            android:textColor="@color/green_d3"
+            android:textSize="@dimen/tv_12_sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@id/contacts_apply_tv"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_16dp"
+            android:background="@drawable/contacts_add_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/common_5dp"
+            android:paddingTop="@dimen/common_5dp"
+            android:text="@string/contacts_apply"
+            android:textColor="@color/green_d3"
+            android:textSize="@dimen/tv_12_sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@id/contacts_added_tv"
+            android:layout_width="45dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_16dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/contacts_added"
+            android:textColor="@color/gray_A0"
+            android:textSize="@dimen/tv_12_sp"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@id/view_line"
+            style="@style/common_line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

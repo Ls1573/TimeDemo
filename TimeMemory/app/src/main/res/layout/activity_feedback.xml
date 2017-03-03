@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+
+    <com.time.memory.gui.WriterEditText
+        android:id="@id/feedback_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_22dp"
+        android:layout_marginRight="@dimen/common_22dp"
+        android:layout_marginTop="@dimen/common_30dp"
+        android:background="@color/white"
+        android:gravity="left|top"
+        android:imeOptions="actionDone"
+        android:maxLength="500"
+        android:minHeight="@dimen/common_300dp"
+        android:padding="@dimen/common_14dp"
+        android:textColor="@color/common_font_black"
+        android:textColorHint="@color/gray_A0"
+        app:hintText="@string/feedback_hint"
+        app:imagewidth="@dimen/common_18dp"
+        app:textColor="@color/gray_A0"
+        app:textSize="@dimen/tv_14_sp"/>
+
+    <TextView
+        android:id="@id/app_submit"
+        android:layout_width="@dimen/common_250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nice_spinner_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:padding="@dimen/common_10dp"
+        android:text="@string/app_confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_18dp"/>
+
+
+</LinearLayout>

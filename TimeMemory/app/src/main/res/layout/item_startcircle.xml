@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@id/app_submit"
+        android:layout_width="@dimen/common_250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nice_spinner_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_30dp"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:padding="@dimen/common_10dp"
+        android:text="@string/import_circle_tv"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_18dp"/>
+
+    <TextView
+        android:id="@id/app_jump"
+        android:layout_width="@dimen/common_120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nice_spinner_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_10dp"
+        android:gravity="center"
+        android:padding="@dimen/common_10dp"
+        android:text="@string/app_jump"
+        android:textColor="@color/browen_6A"
+        android:textSize="@dimen/common_18dp"/>
+
+</LinearLayout>
+

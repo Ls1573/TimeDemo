@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/mine_ll"
+                android:orientation="vertical"
+
+                android:paddingTop="@dimen/common_10dp">
+
+    <ImageView
+        android:id="@id/new_friend_iv"
+        android:layout_width="@dimen/common_40dp"
+        android:layout_height="@dimen/common_40dp"
+        android:layout_marginBottom="@dimen/common_10dp"
+        android:layout_marginLeft="@dimen/common_10dp"
+        android:layout_marginRight="@dimen/common_10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/circie_mine"
+        />
+
+    <TextView
+        android:id="@id/new_friend_n_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_40dp"
+        android:layout_marginRight="@dimen/common_10dp"
+        android:layout_toRightOf="@id/new_friend_iv"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="哈哈哈"
+        android:textColor="@color/common_font_black"
+        android:textSize="@dimen/common_14dp"
+        />
+
+    <TextView
+        android:id="@id/new_friend_d_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_40dp"
+        android:layout_toRightOf="@id/new_friend_n_tv"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/new_friend_apply"
+        android:textColor="@color/common_font_black"
+        android:textSize="@dimen/common_14dp"
+        />
+
+
+    <View
+        style="@style/common_line"
+        android:layout_below="@id/new_friend_iv"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_200dp">
+
+        <View
+            android:id="@+id/pop_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/yellow_A8" />
+
+        <EditText
+            android:id="@+id/pop_retrieve_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_10dp"
+            android:layout_marginLeft="@dimen/common_16dp"
+            android:layout_marginTop="@dimen/common_10dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="@dimen/common_5dp"
+            android:hint="搜索关键字"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/tv_12_sp" />
+
+        <View
+            android:id="@+id/pop_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/pop_retrieve_tv"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/pop_hot_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_32dp"
+            android:layout_below="@id/pop_view_line"
+            android:layout_marginTop="@dimen/common_8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_10dp"
+                android:gravity="center"
+                android:text="热度"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_12_sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_25dp"
+                android:layout_marginLeft="@dimen/common_10dp"
+                android:background="@drawable/selector_btn_pop"
+                android:text="降序"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_12_sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_25dp"
+                android:layout_marginLeft="@dimen/common_10dp"
+                android:background="@drawable/selector_btn_pop"
+                android:text="升序"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_12_sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_time_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pop_hot_ll"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_40dp"
+                android:layout_marginLeft="@dimen/common_10dp"
+                android:gravity="center"
+                android:text="时间"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_12_sp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_10dp">
+
+                <Button
+                    android:id="@+id/pop_time_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common_25dp"
+                    android:background="@drawable/selector_btn_pop"
+                    android:text="不限"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_12_sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/pop_time_btn"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_8dp"
+                    android:background="@drawable/pop_down" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pop_time_ll">
+            <LinearLayout
+                android:id="@+id/pop_label_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_32dp"
+                android:layout_marginTop="@dimen/common_8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/common_10dp"
+                    android:gravity="center"
+                    android:text="标签"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_12_sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common_25dp"
+                    android:layout_marginLeft="@dimen/common_10dp"
+                    android:background="@drawable/selector_btn_pop"
+                    android:text="全部"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_12_sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common_25dp"
+                    android:layout_marginLeft="@dimen/common_10dp"
+                    android:background="@drawable/selector_btn_pop"
+                    android:text="旅游时光"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_12_sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common_25dp"
+                    android:layout_marginLeft="@dimen/common_10dp"
+                    android:background="@drawable/selector_btn_pop"
+                    android:text="坠入情网"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_12_sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pop_all_btn"
+                android:layout_width="@dimen/common_16dp"
+                android:layout_height="@dimen/common_10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/common_16dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pop_down_big"/>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/common_8dp"
+            android:background="@drawable/pop_up" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

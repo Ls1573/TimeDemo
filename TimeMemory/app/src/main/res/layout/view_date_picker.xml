@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <View
+        android:id="@id/view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@id/date_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_52dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_14dp"
+            android:text="0000-00-00"
+            android:textColor="@color/grey_48"
+            android:textSize="@dimen/tv_16_sp"/>
+
+        <View
+            style="@style/common_line"
+            android:layout_height="@dimen/common_2dp"
+            android:layout_marginBottom="@dimen/common_6dp"
+            android:background="@color/yellow_E3"/>
+
+        <com.time.memory.gui.datapicker.MyDatePicker
+            android:id="@id/date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:calendarViewShown="false"
+            android:spinnersShown="true"/>
+
+        <View
+            style="@style/common_line"
+            android:layout_height="@dimen/common_divider_height"
+            android:layout_marginTop="@dimen/common_6dp"
+            android:background="@color/grey_divider"/>
+
+        <TextView
+            android:id="@id/app_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_52dp"
+            android:background="@drawable/mine_ll"
+            android:gravity="center"
+            android:text="@string/app_submit"
+            android:textColor="@color/grey_48"
+            android:textSize="@dimen/tv_16_sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

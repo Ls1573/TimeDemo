@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <EditText
+        android:id="@id/writer_style_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_45dp"
+        android:layout_marginLeft="@dimen/common_30dp"
+        android:layout_marginRight="@dimen/common_30dp"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:hint="输入记忆主题"
+        android:maxLength="30"
+        android:singleLine="true"
+        android:textColor="@color/grey_4B"
+        android:textColorHint="@color/grey_9D"
+        android:textSize="@dimen/tv_16_sp"/>
+
+    <View
+        style="@style/common_line"
+        android:layout_marginBottom="@dimen/common_14dp"
+        android:layout_marginLeft="@dimen/common_40dp"
+        android:layout_marginRight="@dimen/common_40dp"
+        android:layout_marginTop="@dimen/common_10dp"
+        android:background="@color/grey_DC"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_45dp"
+        android:layout_marginBottom="@dimen/common_14dp"
+        android:layout_marginLeft="@dimen/common_40dp"
+        android:layout_marginRight="@dimen/common_40dp"
+        >
+
+        <TextView
+            android:id="@id/writer_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/memory_date"
+            android:drawablePadding="@dimen/common_10dp"
+            android:gravity="center"
+            android:text="2000-00-00"
+            android:textColor="@color/grey_7A"/>
+
+        <TextView
+            android:id="@id/writer_tag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:hint="@string/writer_tag_tv"
+            android:singleLine="true"
+            android:textColor="@color/yellow_C9"
+            android:textColorHint="@color/yellow_C9"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/writer_sign_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_14dp"
+        android:background="@color/common_background"
+        android:gravity="center"
+        android:paddingBottom="@dimen/common_10dp"
+        android:paddingTop="@dimen/common_20dp"
+        android:textColor="@color/grey_9D"
+        android:textSize="@dimen/tv_12_sp"
+        android:visibility="visible"
+        />
+</LinearLayout>

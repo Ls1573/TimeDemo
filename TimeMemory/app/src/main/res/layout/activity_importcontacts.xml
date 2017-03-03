@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@id/app_cancle"
+        android:layout_width="@dimen/common_40dp"
+        android:layout_height="@dimen/common_40dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/common_5dp"
+        android:layout_marginTop="@dimen/common_5dp"
+        android:padding="@dimen/common_10dp"
+        android:src="@drawable/image_close"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_100dp"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/common_3dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/import_contacts"
+        android:textColor="@color/black_26"
+        android:textSize="@dimen/tv_16_sp"
+        />
+
+
+    <TextView
+        android:id="@id/app_submit"
+        android:layout_width="@dimen/common_250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nice_spinner_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/common_40dp"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:padding="@dimen/common_10dp"
+        android:text="@string/import_contacts_tv"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_18dp"/>
+
+    <TextView
+        android:id="@id/login_reset"
+        android:layout_width="@dimen/common_250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nice_spinner_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:padding="@dimen/common_10dp"
+        android:text="@string/login_reset_tv"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_18dp"/>
+</LinearLayout>

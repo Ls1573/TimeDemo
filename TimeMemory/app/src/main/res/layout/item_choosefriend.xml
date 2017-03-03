@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:ignore="RtlHardcoded">
+
+    <com.time.memory.gui.MyTextView
+        android:id="@id/circle_constant_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/choose_friend_bg"
+        android:gravity="center"
+        android:textColor="@color/browen_76"
+        android:textSize="@dimen/tv_14_sp"/>
+
+    <com.time.memory.gui.MyImageView
+        android:id="@id/circle_constant_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

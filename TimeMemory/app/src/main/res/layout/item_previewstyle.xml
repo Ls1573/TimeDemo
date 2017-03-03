@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@id/writer_style_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_30dp"
+        android:layout_marginRight="@dimen/common_30dp"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:hint="记忆主题"
+        android:paddingBottom="@dimen/common_12dp"
+        android:paddingTop="@dimen/common_10dp"
+        android:textColor="@color/grey_4B"
+        android:textColorHint="@color/grey_48"
+        android:textSize="@dimen/tv_16_sp"/>
+
+    <TextView
+        android:id="@id/writer_tag_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/yellow_C9"
+        android:visibility="gone"/>
+
+    <View
+        style="@style/common_line"
+        android:layout_marginBottom="@dimen/common_6dp"
+        android:layout_marginLeft="@dimen/common_40dp"
+        android:layout_marginRight="@dimen/common_40dp"
+        android:layout_marginTop="@dimen/common_10dp"
+        android:background="@color/grey_DC"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_6dp"
+        android:layout_marginLeft="@dimen/common_40dp"
+        android:layout_marginRight="@dimen/common_40dp"
+        android:paddingBottom="@dimen/common_12dp"
+        android:paddingTop="@dimen/common_10dp"
+        >
+
+        <TextView
+            android:id="@id/writer_user_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="by"
+            android:textColor="@color/grey_7A"/>
+
+        <TextView
+            android:id="@id/writer_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/common_10dp"
+            android:gravity="center"
+            android:text="2000-00-00"
+            android:textColor="@color/grey_7A"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+    <RelativeLayout
+        android:id="@id/circle_own_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_38dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_38dp"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_14dp"
+            android:text="@string/circle_own"
+            android:textColor="@color/browen"
+            android:textSize="14sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@id/cirlce_sotr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_38dp"
+            android:layout_alignParentRight="true"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/common_18dp"
+            android:text="@string/sort"
+            android:textColor="@color/browen"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@id/circle_group_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_below="@id/circle_own_rl"
+        android:background="@drawable/mine_ll"
+        >
+
+        <TextView
+            android:id="@id/circle_constant_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_14dp"
+            android:text="高三九班(36)"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+
+
+        <View
+            android:id="@id/view_line"
+            style="@style/common_line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_70dp"
+        android:src="@drawable/aboutus"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_14dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="@color/grey_48"
+        android:textSize="@dimen/tv_18_sp"
+        />
+
+    <TextView
+        android:id="@id/about_version_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_8dp"
+        android:gravity="center_horizontal"
+        android:text="1.0.0"
+        android:textColor="@color/gray_A1"
+        android:textSize="@dimen/tv_14_sp"
+        />
+
+    <View
+        style="@style/common_line"
+        android:layout_marginTop="@dimen/common_40dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@id/about_report_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_gravity="center_horizontal"
+        android:drawableRight="@drawable/arrow_right_grey"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/common_20dp"
+        android:paddingRight="@dimen/common_20dp"
+        android:text="@string/about_report_tv"
+        android:textColor="@color/grey_48"
+        android:textSize="@dimen/tv_16_sp"
+        android:visibility="gone"
+        />
+
+    <View
+        style="@style/common_line"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@id/about_proto_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_160dp"
+        android:gravity="center"
+        android:text="@string/app_protocol"
+        android:textColor="@color/yellow_CEA"
+        android:textSize="@dimen/tv_16_sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_6dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_us"
+        android:textColor="@color/gray_AB"
+        android:textSize="@dimen/tv_14_sp"
+        />
+</LinearLayout>

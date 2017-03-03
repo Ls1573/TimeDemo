@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@null"
+              android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EBEEF2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52.0dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@id/main_memory_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@id/main_memory_iv"
+                style="@style/main_activity_bottom_menu_iv"
+                android:src="@drawable/main_memory"
+                />
+
+            <ImageView
+                android:id="@id/main_memory_dot"
+                style="@style/main_activity_bottom_menu_dot"
+                android:layout_alignRight="@id/main_memory_iv"
+                />
+
+            <TextView
+                android:id="@id/main_memory_tv"
+                style="@style/main_activity_bottom_menu_item"
+                android:text="@string/main_memory"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/main_circle_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@id/main_circle_iv"
+                style="@style/main_activity_bottom_menu_iv"
+                android:src="@drawable/main_circle"
+                />
+
+            <ImageView
+                android:id="@id/main_circle_dot"
+                style="@style/main_activity_bottom_menu_dot"
+                android:layout_alignRight="@id/main_circle_iv"
+                />
+
+            <TextView
+                android:id="@id/main_circle_tv"
+                style="@style/main_activity_bottom_menu_item"
+                android:text="@string/main_circle"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@id/main_message_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@id/main_message_iv"
+                style="@style/main_activity_bottom_menu_iv"
+                android:src="@drawable/main_message"
+                />
+
+            <ImageView
+                android:id="@id/main_message_dot"
+                style="@style/main_activity_bottom_menu_dot"
+                android:layout_alignRight="@id/main_message_iv"
+                />
+
+            <TextView
+                android:id="@id/main_message_tv"
+                style="@style/main_activity_bottom_menu_item"
+                android:text="@string/main_message"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@id/main_mine_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@id/main_mine_iv"
+                style="@style/main_activity_bottom_menu_iv"
+                android:src="@drawable/main_mine"
+                />
+
+            <ImageView
+                android:id="@id/main_mine_dot"
+                style="@style/main_activity_bottom_menu_dot"
+                android:layout_alignRight="@id/main_mine_iv"
+                />
+
+            <TextView
+                android:id="@id/main_mine_tv"
+                style="@style/main_activity_bottom_menu_item"
+                android:text="@string/main_mine"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

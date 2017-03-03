@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@id/memory_tag_sl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:paddingTop="@dimen/common_16dp"
+        >
+
+        <com.time.memory.gui.TagView
+            android:id="@id/add_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:tagItemBorderHorizontal="@dimen/common_14dp"
+            app:tagItemBorderVertical="@dimen/common_8dp"
+            app:tagTagResId="@layout/item_add_tag"
+            />
+    </ScrollView>
+
+    <com.time.memory.gui.loading.LoadingView
+        android:id="@id/app_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+
+    <RelativeLayout
+        android:id="@id/memory_tag_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/common_18dp"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:id="@id/memory_sign_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_68dp"
+            android:layout_marginRight="@dimen/common_10dp"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@id/memory_sign_iv"
+                android:layout_width="@dimen/common_20dp"
+                android:layout_height="@dimen/common_20dp"
+                android:src="@drawable/time_sign"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/memory_sign_iv"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/memory_line"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/memory_tagall_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:text="@string/memory_tagall_tv"
+            android:textColor="@color/browen_BD"
+            android:textSize="@dimen/tv_16_sp"
+            />
+
+        <TextView
+            android:id="@id/memory_taginfo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:layout_toLeftOf="@id/memory_tagall_tv"
+            android:textColor="@color/browen_BD"
+            android:textSize="@dimen/tv_16_sp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/common_30dp"
+            android:overScrollMode="never"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="@dimen/common_1dp"
+        android:layout_marginTop="@dimen/tv_14_sp"
+        android:background="@drawable/mine_ll"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:maxLength="10"
+            android:paddingLeft="@dimen/common_10dp"
+            android:paddingRight="@dimen/common_10dp"
+            android:text="@string/newfriend_name"
+            android:textColor="@color/black_4A"
+            android:textSize="@dimen/tv_15_sp"
+            />
+
+        <com.time.memory.gui.ClearEditText
+            android:id="@id/newfriend_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginRight="@dimen/x8"
+            android:background="@color/transparent"
+            android:drawablePadding="@dimen/common_10dp"
+            android:drawableRight="@drawable/list_filter_close_button_img"
+            android:hint="@string/login_nick_in"
+            android:imeOptions="actionNext"
+            android:maxLength="10"
+            android:paddingLeft="@dimen/x5"
+            android:paddingRight="@dimen/common_12dp"
+            android:singleLine="true"
+            android:textColor="@color/common_font_black"
+            android:textColorHint="@color/gray_B5"
+            android:textSize="@dimen/tv_14_sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/mine_ll"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@id/circle_editname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:maxLength="10"
+            android:paddingLeft="@dimen/common_10dp"
+            android:paddingRight="@dimen/common_10dp"
+            android:text="@string/newfriend_phone"
+            android:textColor="@color/black_4A"
+            android:textSize="@dimen/tv_15_sp"
+            />
+
+        <com.time.memory.gui.ClearEditText
+            android:id="@id/newfriend_phone_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginRight="@dimen/x8"
+            android:background="@color/transparent"
+            android:drawablePadding="@dimen/common_10dp"
+            android:drawableRight="@drawable/list_filter_close_button_img"
+            android:hint="@string/newfriend_phone_hint"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/x5"
+            android:paddingRight="@dimen/common_12dp"
+            android:singleLine="true"
+            android:textColor="@color/common_font_black"
+            android:textColorHint="@color/gray_B5"
+            android:textSize="@dimen/tv_14_sp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@id/app_submit"
+        android:layout_width="@dimen/common_250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/common_30dp"
+        android:layout_marginTop="@dimen/common_40dp"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:padding="@dimen/common_10dp"
+        android:text="@string/newfriend_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_18dp"
+        android:visibility="visible"/>
+</LinearLayout>

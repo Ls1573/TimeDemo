@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/common_14dp"
+    android:paddingLeft="@dimen/common_14dp"
+    android:paddingRight="@dimen/common_14dp"
+    >
+
+    <TextView
+        android:id="@id/time_from_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_5dp"
+        android:textColor="@color/browen_BB"
+        android:textSize="@dimen/tv_16_sp"
+        />
+
+    <LinearLayout
+        android:id="@id/time_unread_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/common_10dp"
+        android:background="@drawable/memory_unread_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_5dp"
+        android:paddingRight="@dimen/common_5dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@id/time_unread_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/common_5dp"
+            android:layout_toLeftOf="@id/time_unread_tv"
+            android:gravity="center_vertical"
+            android:text="未读补充记忆"
+            android:textColor="@color/browen_CB"
+            android:textSize="@dimen/tv_13_sp"
+            />
+
+        <TextView
+            android:id="@id/time_unreadnum_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/red_EC"
+            android:textSize="@dimen/tv_16_sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_from_tv"
+        android:layout_marginBottom="@dimen/common_10dp"
+        android:gravity="top"
+        android:maxLines="2"
+        android:textColor="@color/grey_48"
+        android:textSize="@dimen/tv_14_sp"
+        />
+
+    <com.time.memory.gui.nineGridImage.NineGridImageView
+        android:id="@id/time_imsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_title_tv"
+        android:layout_marginRight="@dimen/common_35dp"
+        app:hasborder="true"
+        app:imgGap="5dp"
+        app:maxSize="3"
+        app:showStyle="grid"
+        />
+
+    <LinearLayout
+        android:id="@id/memory_pic_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_imsg"
+        android:layout_marginBottom="@dimen/common_4dp"
+        android:layout_marginTop="@dimen/common_2dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@id/memory_pic_tv"
+            style="@style/common_time_tv"
+            android:drawableLeft="@drawable/memory_photo"
+            android:paddingBottom="@dimen/common_5dp"
+            android:paddingRight="@dimen/common_5dp"
+            android:paddingTop="@dimen/common_5dp"
+            android:text="0"
+            />
+
+        <TextView
+            android:id="@id/memory_fork_tv"
+            style="@style/common_time_tv2"
+            android:drawableLeft="@drawable/memory_fork"
+            android:text="0"
+            />
+
+        <TextView
+            android:id="@id/memory_comment_tv"
+            style="@style/common_time_tv2"
+            android:drawableLeft="@drawable/memory_comment"
+            android:text="0"
+            />
+
+        <TextView
+            android:id="@id/memory_add_tv"
+            style="@style/common_time_tv2"
+            android:drawableLeft="@drawable/memory_add"
+            android:text="0"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/time_loc_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/memory_pic_ll"
+        android:drawableLeft="@drawable/memory_location"
+        android:drawablePadding="@dimen/common_5dp"
+        android:singleLine="true"
+        android:textColor="@color/grey_9D"
+        android:textSize="@dimen/tv_14_sp"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@id/foot_view_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/time_loc_tv"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@id/foot_view_pre"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:indeterminateDrawable="@drawable/progressbar"
+            android:visibility="visible"
+            />
+
+        <TextView
+            android:id="@id/foot_view_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="上拉加载更多..."
+            android:textColor="@color/common_font_black"/>
+    </LinearLayout>
+</RelativeLayout>

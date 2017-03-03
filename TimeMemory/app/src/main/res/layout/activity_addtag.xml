@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/add_tag_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:background="@color/grey_F8"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@id/app_cancle"
+            android:layout_width="35dip"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x3"
+            android:gravity="center_vertical"
+            android:padding="@dimen/common_10dp"
+            android:src="@drawable/image_close"/>
+
+
+        <TextView
+            android:id="@+id/tv_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_brown"
+            android:textSize="@dimen/tv_20_sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_main_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_6dp"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="@dimen/common_8dp"
+            android:paddingRight="@dimen/common_8dp"
+            android:text="@string/app_eddit"
+            android:textColor="@color/font_brown"
+            android:textSize="@dimen/tv_16_sp"
+            />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/common_30dp"
+                android:layout_marginTop="@dimen/common_20dp"
+                android:src="@drawable/tag_title_"
+                />
+
+            <TextView
+                android:id="@id/add_tag_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_30dp"
+                android:gravity="center"
+                android:text="@string/add_tag_tv"
+                android:visibility="gone"
+                android:textColor="@color/grey_9D"
+                android:textSize="@dimen/tv_12_sp"
+                />
+
+            <com.time.memory.gui.TagView
+                android:id="@id/add_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:animateLayoutChanges="false"
+                app:tagBorder="@dimen/common_6dp"
+                app:tagItemBorderHorizontal="@dimen/common_10dp"
+                app:tagItemBorderVertical="@dimen/common_8dp"
+                app:tagTagResId="@layout/item_add_tag"
+                />
+
+            <TextView
+                android:id="@id/app_submit"
+                android:layout_width="@dimen/common_250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/common_30dp"
+                android:layout_marginTop="@dimen/common_30dp"
+                android:background="@drawable/login_btn"
+                android:gravity="center"
+                android:padding="@dimen/common_10dp"
+                android:text="@string/tag_create"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_18dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@id/tag_input_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_gravity="bottom"
+        android:background="@color/grey_F8"
+        android:paddingLeft="@dimen/common_12dp"
+        android:paddingRight="@dimen/common_12dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@id/tag_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_6dp"
+            android:background="@drawable/memory_comment_bg"
+            android:hint="请输入标签"
+            android:imeOptions="actionSend"
+            android:paddingLeft="@dimen/common_6dp"
+            android:maxLength="20"
+            android:paddingRight="@dimen/common_6dp"
+            android:singleLine="true"
+            android:textColor="@color/common_font_black"
+            android:textColorHint="@color/black_27"
+            android:textSize="@dimen/tv_14_sp"
+            />
+    </RelativeLayout>
+</LinearLayout>

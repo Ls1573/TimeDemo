@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/common_20dp"
+              android:paddingRight="@dimen/common_20dp"
+    >
+
+    <com.time.memory.gui.sixGridImage.SixGridImageView
+        android:id="@id/writer_grid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y160"
+        android:layout_marginBottom="@dimen/common_8dp"
+        app:imgGap="2dp"/>
+
+    <TextView
+        android:id="@id/writer_details_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|top"
+        android:imeOptions="actionDone"
+        android:paddingLeft="@dimen/common_14dp"
+        android:paddingRight="@dimen/common_14dp"
+        android:textColor="@color/common_font_black"
+        android:textSize="@dimen/tv_14_sp"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_40dp"
+        >
+
+        <TextView
+            android:id="@id/writer_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/common_6dp"
+            android:paddingLeft="@dimen/common_14dp"
+            android:text="2000.00.00"
+            android:textColor="@color/grey_9F"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <TextView
+            android:id="@id/writer_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/loc"
+            android:drawablePadding="@dimen/common_5dp"
+            android:gravity="center_vertical"
+            android:maxWidth="@dimen/common_100dp"
+            android:paddingBottom="@dimen/common_8dp"
+            android:paddingRight="@dimen/common_14dp"
+            android:singleLine="true"
+            android:textColor="@color/grey_9F"
+            android:textSize="@dimen/tv_14_sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+
+    <View
+        style="@style/common_line"
+        android:layout_marginTop="@dimen/common_16dp"
+        />
+
+    <com.time.memory.gui.ClearEditText
+        android:id="@id/mine_address_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_45dp"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/common_10dp"
+        android:drawableRight="@drawable/list_filter_close_button_img"
+        android:hint="@string/update_address_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/common_12dp"
+        android:singleLine="true"
+        android:textColor="@color/common_font_black"
+        android:textColorHint="@color/gray_B5"
+        android:textSize="@dimen/tv_14_sp"/>
+
+    <View style="@style/common_line"/>
+</LinearLayout>

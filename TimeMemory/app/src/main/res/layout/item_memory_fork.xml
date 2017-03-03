@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:background="@drawable/the_end"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="@dimen/common_28dp"
+        android:background="@color/grey_EE"/>
+
+    <RelativeLayout
+        android:id="@id/memoryd_add_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_50dp"
+        android:layout_marginBottom="@dimen/common_28dp"
+        android:layout_marginLeft="@dimen/common_45dp"
+        android:layout_marginRight="@dimen/common_45dp"
+        android:layout_marginTop="@dimen/common_28dp"
+        android:background="@drawable/shape_add_memory">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/memory_white_man"
+            android:drawablePadding="@dimen/common_6dp"
+            android:text="@string/memoryd_add_tv"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_19_sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/memoryd_forks_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/grey_4B"
+        />
+
+    <com.time.memory.gui.MyGridView
+        android:id="@id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_20dp"
+        android:layout_marginRight="@dimen/common_20dp"
+        android:layout_marginTop="@dimen/common_14dp"
+        android:columnWidth="@dimen/common_5dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="9"
+        android:verticalSpacing="@dimen/common_10dp"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="@dimen/common_28dp"
+        android:background="@color/grey_EE"/>
+</LinearLayout>

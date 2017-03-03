@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_14dp"
+        android:layout_marginRight="@dimen/common_10dp"
+        android:paddingBottom="@dimen/common_8dp"
+        android:paddingTop="@dimen/common_14dp"
+        >
+
+        <ImageView
+            android:id="@id/comment_sign_pic_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_45dp"
+            android:layout_marginRight="@dimen/common_10dp"
+            android:src="@drawable/comment_sign"
+            />
+
+        <ImageView
+            android:id="@id/comment_pic_iv"
+            android:layout_width="@dimen/common_45dp"
+            android:layout_height="@dimen/common_45dp"
+            android:layout_marginBottom="@dimen/common_10dp"
+            android:layout_marginRight="@dimen/common_8dp"
+            android:layout_toRightOf="@id/comment_sign_pic_iv"
+            android:src="@drawable/circie_mine"
+            />
+
+        <TextView
+            android:id="@id/comment_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/comment_pic_iv"
+            android:singleLine="true"
+            android:text="木子李"
+            android:textColor="@color/yellow_CB"
+            android:textSize="@dimen/tv_15_sp"
+            />
+
+        <TextView
+            android:id="@id/comment_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="2016.09.04"
+            android:textColor="@color/grey_7F"
+            android:textSize="@dimen/tv_14_sp"
+            />
+
+        <TextView
+            android:id="@id/comment_desc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_name_tv"
+            android:layout_marginTop="@dimen/common_6dp"
+            android:layout_toRightOf="@id/comment_pic_iv"
+            android:text="测试数据哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+            android:textColor="@color/grey_48"
+            android:textSize="@dimen/tv_15_sp"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/common_line"
+        android:layout_below="@id/comment_desc_tv"
+        android:layout_marginLeft="@dimen/common_40dp"
+        android:layout_marginRight="@dimen/common_10dp"
+        />
+</LinearLayout>

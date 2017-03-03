@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mine_ll"
+    android:paddingRight="@dimen/common_12dp"
+    android:paddingTop="@dimen/common_5dp">
+
+
+    <ImageView
+        android:id="@+id/user_img"
+        android:layout_width="@dimen/common_45dp"
+        android:layout_height="@dimen/common_45dp"
+        android:layout_marginBottom="@dimen/common_10dp"
+        android:layout_marginLeft="@dimen/common_14dp"
+        android:layout_marginRight="@dimen/common_10dp"
+        android:layout_marginTop="@dimen/common_10dp"
+        android:paddingRight="@dimen/common_2dp"
+        android:src="@drawable/friend_photo"/>
+
+    <RelativeLayout
+        android:id="@+id/user_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_8dp"
+        android:layout_toRightOf="@id/user_img">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black_2C"
+            android:textSize="@dimen/tv_15_sp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_10dp"
+            android:textColor="@color/gray_A2"
+            android:textSize="@dimen/tv_11_sp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/user_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_time"
+        android:layout_marginRight="@dimen/common_20dp"
+        android:layout_marginTop="@dimen/common_4dp"
+        android:layout_toRightOf="@id/user_img"
+        android:singleLine="true"
+        android:textColor="@color/gray_A2"
+        android:textSize="@dimen/tv_11_sp"/>
+
+    <View
+        android:id="@id/view_line"
+        style="@style/common_line"
+        android:layout_below="@id/user_img"
+        android:layout_marginLeft="@dimen/common_14dp"/>
+
+</RelativeLayout>

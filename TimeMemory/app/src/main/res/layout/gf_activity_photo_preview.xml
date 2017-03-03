@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/photo_pre_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:background="@color/black_2C"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/common_48dp"
+            android:layout_height="@dimen/common_48dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_back_w"
+            />
+
+        <ImageView
+            android:id="@id/app_eddit"
+            android:layout_width="@dimen/common_48dp"
+            android:layout_height="@dimen/common_48dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/photo_checkbox"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/photo_submit_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_2C"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@id/app_submit"
+            android:layout_width="@dimen/common_48dp"
+            android:layout_height="@dimen/common_48dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/app_confirm"
+            android:textColor="@color/black_83"
+            />
+    </RelativeLayout>
+
+    <com.time.memory.gui.gallery.widget.GFViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/photo_submit_rl"
+        android:layout_below="@id/photo_pre_rl"/>
+</RelativeLayout>

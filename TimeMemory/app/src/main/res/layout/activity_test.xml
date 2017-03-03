@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/common_20dp"
+    android:paddingRight="@dimen/common_20dp">
+
+    <TextView
+        android:id="@+id/myClick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_40dp"
+        android:background="@android:color/holo_red_light"
+        />
+
+    <com.time.memory.gui.MemoryTagView
+        android:id="@id/add_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:FlowBorderHorizontal="0dp"
+        app:FlowBorderVertical="5dp"
+        app:FlowFill="true"
+        app:FlowResId="@layout/item_my_memorydetail"
+        />
+</LinearLayout>

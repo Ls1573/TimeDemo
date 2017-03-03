@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+    <LinearLayout
+        android:id="@id/mine_photo_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/mine_ll"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_12dp"
+            android:layout_weight="1"
+            android:text="@string/push_receiver"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <com.time.memory.gui.togglebutton.button.ToggleButton
+            android:id="@id/tb_reveicer"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:drawableRight="@drawable/arrow_right_grey"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@id/push_sound_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/common_14dp"
+        android:background="@drawable/mine_ll"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_12dp"
+            android:layout_weight="1"
+            android:text="@string/push_sound"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <com.time.memory.gui.togglebutton.button.ToggleButton
+            android:id="@id/push_sound"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:drawableRight="@drawable/arrow_right_grey"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <View
+        style="@style/common_line"
+        />
+
+    <LinearLayout
+        android:id="@id/push_vibrate_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/mine_ll"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_12dp"
+            android:layout_weight="1"
+            android:text="@string/push_vibrate"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <com.time.memory.gui.togglebutton.button.ToggleButton
+            android:id="@id/push_vibrate"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:drawableRight="@drawable/arrow_right_grey"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/push_circle_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/common_14dp"
+        android:background="@drawable/mine_ll"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_12dp"
+            android:layout_weight="1"
+            android:text="@string/push_circle"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <com.time.memory.gui.togglebutton.button.ToggleButton
+            android:id="@id/push_circle"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:drawableRight="@drawable/arrow_right_grey"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/push_csign_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_12dp"
+        android:layout_marginRight="@dimen/common_12dp"
+        android:layout_marginTop="@dimen/common_8dp"
+        android:text="@string/push_sign"
+        android:textColor="@color/grey_82"
+        android:textSize="@dimen/common_14dp"
+        />
+
+</LinearLayout>

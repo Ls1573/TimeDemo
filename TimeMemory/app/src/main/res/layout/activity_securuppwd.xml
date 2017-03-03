@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:animateLayoutChanges="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+    <TextView
+        android:id="@id/register_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/common_title_ll"
+        android:layout_marginTop="@dimen/common_14dp"
+        android:background="@color/white"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:gravity="center_vertical"
+        android:text="1352323233"
+        android:paddingLeft="@dimen/common_14dp"
+        android:paddingRight="@dimen/common_14dp"
+        android:textColor="@color/browen_3E"
+        android:textColorHint="@color/gray_A1"
+        android:textSize="@dimen/tv_14_sp"/>
+
+    <RelativeLayout
+        android:id="@id/login_verifty_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_45dp"
+        android:layout_below="@id/register_et"
+        android:layout_marginTop="@dimen/common_divider_height"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/common_14dp"
+        android:paddingRight="@dimen/common_14dp">
+
+        <TextView
+            android:id="@id/login_send_verifty"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingTop="@dimen/common_6dp"
+            android:text="@string/login_verifty"
+            android:textColor="@color/browen"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <EditText
+            android:id="@id/register_code_et"
+            android:layout_width="@dimen/common_200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/common_60dp"
+            android:layout_toLeftOf="@id/login_send_verifty"
+            android:background="@color/transparent"
+            android:hint="@string/login_verifty_notice"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textColor="@color/browen_3E"
+            android:textColorHint="@color/gray_A1"
+            android:textSize="@dimen/tv_14_sp"/>
+    </RelativeLayout>
+
+
+    <com.time.memory.gui.PwdEditText
+        android:id="@id/register_pwd_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/login_verifty_rl"
+        android:layout_marginTop="@dimen/common_divider_height"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:hint="@string/safe_repwd_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:paddingLeft="@dimen/common_14dp"
+        android:paddingRight="@dimen/common_14dp"
+        android:singleLine="true"
+        android:textColor="@color/browen_3E"
+        android:textColorHint="@color/gray_A1"
+        android:textSize="@dimen/tv_14_sp"
+        />
+
+
+    <TextView
+        android:id="@id/app_submit"
+        android:layout_width="@dimen/common_250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_pwd_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/common_60dp"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:padding="@dimen/common_10dp"
+        android:text="@string/app_confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_18dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+    <com.time.memory.gui.BetterRecyclerView
+        android:id="@id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:id="@id/memoryp_send_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:background="@color/grey_F8"
+        android:paddingRight="@dimen/common_6dp"
+        android:visibility="gone"
+        >
+
+        <EditText
+            android:id="@id/memoryp_send_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_12dp"
+            android:layout_marginRight="@dimen/common_6dp"
+            android:layout_toLeftOf="@id/memoryp_fork_iv"
+            android:background="@drawable/memory_comment_bg"
+            android:hint="评论"
+            android:imeOptions="actionSend"
+            android:maxLength="250"
+            android:paddingLeft="@dimen/common_6dp"
+            android:paddingRight="@dimen/common_6dp"
+            android:singleLine="true"
+            android:textColor="@color/common_font_black"
+            android:textColorHint="@color/black_27"
+            android:textSize="@dimen/tv_14_sp"
+            />
+
+        <ImageView
+            android:id="@id/memoryp_shared_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_4dp"
+            android:padding="@dimen/common_8dp"
+            android:src="@drawable/connent_share"
+            android:visibility="visible"
+            />
+
+        <ImageView
+            android:id="@id/memoryp_add_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/memoryp_shared_iv"
+            android:padding="@dimen/common_8dp"
+            android:src="@drawable/connent_man"
+            android:visibility="visible"
+            />
+
+        <ImageView
+            android:id="@id/memoryp_fork_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/memoryp_add_tv"
+            android:padding="@dimen/common_8dp"
+            android:src="@drawable/connent_heart"
+            android:visibility="visible"
+            />
+    </RelativeLayout>
+</LinearLayout>

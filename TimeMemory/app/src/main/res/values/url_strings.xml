@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--60@.205.234.241-->
+    <!--app@.51sgjy.com-->
+
+    <string name="FSCLIENTIP">app.51sgjy.com</string>
+    <string name="FSCLIENTHOST">7901</string>
+    <string name="FSIMAGEPATH">https://sgjy.oss-cn-beijing.aliyuncs.com/</string>
+    <string name="FSIMAGEOSS">\&#063;x-oss-process=style/list</string>
+    <string name="FSMYIMAGEOSS">\&#063;x-oss-process=style/mylist</string>
+    <string name="FSIMAGEOSSDETAIL">\&#063;x-oss-process=style/details</string>
+    <string name="FSIMAGEOSSONE">\&#063;x-oss-process=style/onepicture</string>
+    <string name="FSDOWNLOAD">https://a.app.qq.com/o/simple.jsp?pkgname=com.time.memory</string>
+    <string name="FSCAPTAIN">https://www.51sgjy.com</string>
+    <string name="FSSHAREURL">https://app.51sgjy.com:443</string>
+    <string name="FSAGREEMENT">https://app.51sgjy.com:443/mt-nio/webPage/userAgreement.htm</string>
+    <string name="FSMANAGER">https://app.51sgjy.com:443</string>                                                                  <!-- 官网跳转 -->
+
+    <string name="FsGetAppVersion">https://app.51sgjy.com:443/mt-nio/version.json</string>			                            <!-- 版本更新 -->
+    <string name="FSGETVALIDCODE">https://app.51sgjy.com:443/mt-nio/userApi/sendVerifyCode.htm</string>							<!-- 获取验证码-->
+    <string name="FSREGIST">https://app.51sgjy.com:443/mt-nio/userApi/regist.htm</string>									        <!-- 注册-->
+    <string name="FSLOGIN">https://app.51sgjy.com:443/mt-nio/userApi/login.htm</string>										    <!-- 登录-->
+    <string name="FSCHANGE">https://app.51sgjy.com:443/mt-nio/userApi/changePwd.htm</string>										<!-- 修改密码-->
+    <string name="FSCHANGEVERIFTY">https://app.51sgjy.com:443/mt-nio/userApi/sendChangePwdVerifyCode.htm</string>				    <!-- 忘记密码发送验证码-->
+    <string name="FSUPUSER">https://app.51sgjy.com:443/mt-nio/userApi/CP02.htm</string>				                            <!-- 修改个人信息-->
+    <string name="FSFEEDBACK">https://app.51sgjy.com:443/mt-nio/userApi/CP05.htm</string>				                            <!-- 意见反馈-->
+    <string name="FSUSERTAGS">https://app.51sgjy.com:443/mt-nio/userApi/CP06.htm</string>				                            <!-- 个人标签一览-->
+    <string name="FSGROUPTAGS">https://app.51sgjy.com:443/mt-nio/userApi/CP07.htm</string>				                        <!-- 群标签一览-->
+    <string name="FSREMOVEMYTAG">https://app.51sgjy.com:443/mt-nio/userApi/CP08.htm</string>				                        <!-- 删除个人标签-->
+    <string name="FSREMOVEGROUPTAG">https://app.51sgjy.com:443/mt-nio/userApi/CP09.htm</string>				                    <!-- 删除圈子标签-->
+    <string name="FSREADDGROUPTAG">https://app.51sgjy.com:443/mt-nio/userApi/CP10.htm</string>				                    <!-- 创建圈子标签-->
+    <string name="FSSENDEMAIL">https://app.51sgjy.com:443/mt-nio/userApi/CP11.htm</string>				                        <!-- 发送邮箱验证码-->
+    <string name="FSUPDATEPHONE">https://app.51sgjy.com:443/mt-nio/userApi/CP12.htm</string>				                        <!-- 修改手机号-->
+    <string name="FSADDUSERTAG">https://app.51sgjy.com:443/mt-nio/userApi/CP13.htm</string>				                        <!-- 创建用户标签-->
+    <string name="FSDATASTATISTICS">https://app.51sgjy.com:443/mt-nio/userApi/CP14.htm</string>                                   <!--个人统计信息-->
+    <string name="FSUPPHONECODE">https://app.51sgjy.com:443/mt-nio/userApi/CP15.htm</string>				                        <!-- 修改手机号验证码-->
+    <string name="FSBINDEMAIL">https://app.51sgjy.com:443/mt-nio/userApi/CP16.htm</string>				                        <!-- 绑定邮箱-->
+    <string name="FSVERITYEMAIL">https://app.51sgjy.com:443/mt-nio/userApi/CP17.htm</string>				                        <!-- 验证邮箱-->
+    <string name="FSCREATEGROUP">https://app.51sgjy.com:443/mt-nio/groupApi/CG01.htm</string>				                        <!-- 新建圈子-->
+    <string name="FSADDPEOPLEINC">https://app.51sgjy.com:443/mt-nio/groupApi/CG03.htm</string>				                    <!-- 添加好友进圈子-->
+    <string name="FSGETGROUPPEOPLES">https://app.51sgjy.com:443/mt-nio/groupApi/CG04.htm</string>				                    <!-- 获取圈子里用户列表-->
+    <string name="FSCIRCLES">https://app.51sgjy.com:443/mt-nio/groupApi/CG02.htm </string>				                        <!-- 请求圈子列表-->
+    <string name="FSUPCONSTACTS">https://app.51sgjy.com:443/mt-nio/groupApi/CG05.htm </string>				                    <!-- 首次上传通讯录-->
+    <string name="FSREQFriends">https://app.51sgjy.com:443/mt-nio/groupApi/CG06.htm</string>				                        <!-- 请求好友列表-->
+    <string name="FSREQFRIENDINFO">https://app.51sgjy.com:443/mt-nio/groupApi/CG07.htm</string>				                    <!-- 请求获取好友详情-->
+    <string name="FSREQUPNAME">https://app.51sgjy.com:443/mt-nio/groupApi/CG08.htm</string>				                        <!-- 请求修改圈子名-->
+    <string name="FSREQDEUSER">https://app.51sgjy.com:443/mt-nio/groupApi/CG09.htm</string>				                        <!-- 请求删除圈子内用户-->
+    <string name="FSREQAPPLY">https://app.51sgjy.com:443/mt-nio/groupApi/CG10.htm</string>				                        <!-- 请求申请成为好友-->
+    <string name="FSREPORT">https://app.51sgjy.com:443/mt-nio/groupApi/CG11.htm</string>				                            <!-- 投诉用户-->
+    <string name="FSADDGROUP">https://app.51sgjy.com:443/mt-nio/groupApi/CG12.htm</string>				                        <!-- 请求申请进入圈子-->
+    <string name="FSEXITGROUP">https://app.51sgjy.com:443/mt-nio/groupApi/CG13.htm</string>				                        <!-- 请求退出圈子-->
+    <string name="FSSEARCH">https://app.51sgjy.com:443/mt-nio/groupApi/CG15.htm</string>				                            <!-- 搜索圈子（扫描圈子二维码）-->
+    <string name="FSDELETEFRIEND">https://app.51sgjy.com:443/mt-nio/groupApi/CG16.htm</string>				                    <!-- 删除好友-->
+    <string name="FSSTARTCIRCLE">https://app.51sgjy.com:443/mt-nio/groupApi/CG14.htm</string>				                    <!-- 激活圈子-->
+    <string name="FSUPCONTACTS">https://app.51sgjy.com:443/mt-nio/groupApi/CG17.htm</string>				                         <!--更改联系人-->
+    <string name="FSSEARCHUSER">https://app.51sgjy.com:443/mt-nio/groupApi/CG18.htm</string>				                         <!-- 查找用户-->
+    <string name="FSPATTERN">https://app.51sgjy.com:443/mt-nio/groupApi/CG19.htm</string>				                         <!-- 设置手势密码-->
+
+    <string name="FSMRMORYPOINT">https://app.51sgjy.com:443/mt-nio/mdApi/CD90M.htm</string>				                        <!-- 获取记忆片断详细-->
+    <string name="FSMRMORYPOINTD">https://app.51sgjy.com:443/mt-nio/mdApi/CD90G.htm</string>				                        <!-- 获取记忆片断详细-->
+    <string name="FSWRITER">https://app.51sgjy.com:443/mt-nio/maApi/CW01.htm</string>				                            <!-- 发布记忆-->
+    <string name="FSEDIT">https://app.51sgjy.com:443/mt-nio/maApi/CW02.htm</string>				                                <!-- 编辑记忆-->
+    <string name="FSFORWARD">https://app.51sgjy.com:443/mt-nio/maApi/CW03.htm</string>				                            <!-- 转存为我的记忆-->
+    <string name="FSFORWARDPRIVATE">https://app.51sgjy.com:443/mt-nio/maApi/CW04.htm</string>				                    <!-- 转存为TA的记忆-->
+    <string name="FSFORWARDGROUP">https://app.51sgjy.com:443/mt-nio/maApi/CW05.htm</string>				                        <!-- 转存为圈子的记忆-->
+    <string name="FSGETTURNS">https://app.51sgjy.com:443/mt-nio/maApi/CW06.htm</string>				                            <!-- 获取可转圈子列表-->
+
+    <string name="FSSUPPORT">https://app.51sgjy.com:443/mt-nio/maApi/CA20.htm </string>				                            <!-- 补充记忆-->
+    <string name="FSDELETEMEMORY">https://app.51sgjy.com:443/mt-nio/maApi/CX01.htm </string>				                        <!-- 删除记忆-->
+
+    <string name="FSMYMEMORYS">https://app.51sgjy.com:443/mt-nio/mdApi/CE01.htm</string>				                            <!-- 获取我的记忆列表-->
+    <string name="FSOTHERMEMORYS">https://app.51sgjy.com:443/mt-nio/mdApi/CE02.htm</string>				                        <!-- 获取他的记忆列表-->
+    <string name="FSGROUPMEMORYS">https://app.51sgjy.com:443/mt-nio/mdApi/CE03.htm</string>				                        <!-- 获取圈子记忆列表-->
+    <string name="FSMYMEMORYINFO">https://app.51sgjy.com:443/mt-nio/mdApi/CD01.htm </string>				                        <!-- 获取我的记忆详情-->
+    <string name="FSOTHERMEMORYINFO">https://app.51sgjy.com:443/mt-nio/mdApi/CD02.htm </string>				                    <!-- 获取他的记忆详情-->
+    <string name="FSGROUPMEMORYINFO">https://app.51sgjy.com:443/mt-nio/mdApi/CD03.htm </string>				                    <!-- 获取群的记忆详情-->
+    <string name="FSUNREADNUM">https://app.51sgjy.com:443/mt-nio/mdApi/CF11.htm </string>                                        <!-- 获取我的&他的*圈子的未读记忆数量 -->
+    <string name="FSUNREADFORK">https://app.51sgjy.com:443/mt-nio/mdApi/CF12.htm </string>                                       <!-- 全部的点赞评论未读提示点击后一览 -->
+    <string name="FSMESSAGE">https://app.51sgjy.com:443/mt-nio/msgApi/CM01.htm </string>				                            <!-- 请求消息列表-->
+    <string name="FSMSGREAD">https://app.51sgjy.com:443/mt-nio/msgApi/CM02.htm </string>				                            <!-- 设置消息已读-->
+    <string name="FSACCEPT">https://app.51sgjy.com:443/mt-nio/msgApi/CM03.htm </string>				                            <!-- 同意好友添加-->
+    <string name="FSTHROUGH">https://app.51sgjy.com:443/mt-nio/msgApi/CM04.htm </string>                                         <!-- 同意入圈子 -->
+    <string name="FSFORK">https://app.51sgjy.com:443/mt-nio/praiseApi/CA01.htm </string>                                         <!-- 点赞处理 -->
+    <string name="FSCOMMENT">https://app.51sgjy.com:443/mt-nio/cmtApi/CA10.htm </string>                                         <!-- 评论追加 -->
+    <string name="FSREMOVECOMMENT">https://app.51sgjy.com:443/mt-nio/cmtApi/CX02.htm </string>                                   <!-- 移除追加 -->
+    <string name="FSADVERT">https://app.51sgjy.com:443/mt-nio/sysApi/CS02.htm </string>                                          <!-- 获取广告 -->
+
+    <string name="FSMEMORY">https://app.51sgjy.com:443/mt-nio/mdApi/CF01.htm</string>				                            <!-- 记忆首页-->
+    <string name="FSUNREAD">https://app.51sgjy.com:443/mt-nio/mdApi/CF03.htm</string>                                            <!--我的记忆未读提示点击后一览-->
+    <string name="FSUNREADOTHER">https://app.51sgjy.com:443/mt-nio/mdApi/CF04.htm</string>                                       <!--他的记忆未读提示点击后一览-->
+    <string name="FSUNREADCIRCLE">https://app.51sgjy.com:443/mt-nio/mdApi/CF05.htm</string>                                      <!--圈子的记忆未读提示点击后一览-->
+    <string name="FSSUPPLEMENTOTHER">https://app.51sgjy.com:443/mt-nio/mdApi/CF06.htm</string>                                   <!--他的追加记忆片段提示点击后一览-->
+    <string name="FSSUPPLEMENTGROUP">https://app.51sgjy.com:443/mt-nio/mdApi/CF07.htm</string>                                   <!--圈子的追加记忆片段提示点击后一览-->
+    <string name="FSOPENRECORD">https://app.51sgjy.com:443/mt-nio/sysApi/CS03.htm</string>                                         <!-- 统计-->
+</resources>

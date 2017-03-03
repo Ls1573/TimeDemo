@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+
+    <View
+        style="@style/common_line"
+        android:layout_marginTop="@dimen/common_16dp"
+        />
+
+    <EditText
+        android:id="@id/update_upsign_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_52dp"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:hint="@string/update_sign"
+        android:imeOptions="actionDone"
+        android:maxLength="30"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/common_10dp"
+        android:paddingTop="@dimen/common_10dp"
+        android:textColor="@color/common_font_black"
+        android:textColorHint="@color/gray_B5"
+        android:textSize="@dimen/tv_14_sp"/>
+
+    <TextView
+        android:id="@id/update_upsign_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="right"
+        android:paddingBottom="@dimen/common_5dp"
+        android:paddingRight="@dimen/common_10dp"
+        android:paddingTop="@dimen/common_5dp"
+        android:text="30"
+        android:textColor="@color/gray_B5"
+        />
+
+    <View style="@style/common_line"/>
+</LinearLayout>

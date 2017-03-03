@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.time.memory.gui.ClearEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:layout_marginBottom="@dimen/common_8dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="@dimen/common_10dp"
+        android:drawableRight="@drawable/list_filter_close_button_img"
+        android:hint="@string/search_friend"
+        android:imeOptions="actionDone"
+        android:paddingLeft="@dimen/common_14dp"
+        android:paddingRight="@dimen/common_12dp"
+        android:singleLine="true"
+        android:textColor="@color/common_font_black"
+        android:textColorHint="@color/gray_A2"
+        android:textSize="@dimen/tv_14_sp"/>
+    <LinearLayout
+        android:id="@id/circle_create_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/mine_ll"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_12dp"
+            android:src="@drawable/create_circle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_10dp"
+            android:text="@string/circle_create"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_10dp"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/arrow_right_grey"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow_E3"
+        android:paddingBottom="@dimen/common_14dp">
+
+        <TextView
+            android:id="@id/dialog_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_38dp"
+            android:layout_marginTop="@dimen/common_14dp"
+            android:gravity="center"
+            android:text="请输入内容"
+            android:textColor="@color/common_font_black"
+            android:textSize="@dimen/tv_18_sp"/>
+
+        <EditText
+            android:id="@id/dialog_input_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_40dp"
+            android:layout_below="@id/dialog_title_tv"
+            android:layout_marginBottom="@dimen/common_10dp"
+            android:layout_marginLeft="@dimen/common_14dp"
+            android:layout_marginRight="@dimen/common_14dp"
+            android:gravity="center"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="@color/common_font_black"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_38dp"
+            android:layout_below="@id/dialog_input_et"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_14dp"
+            android:paddingRight="@dimen/common_14dp">
+
+            <Button
+                android:id="@id/subscription_submit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_38dp"
+                android:layout_marginRight="@dimen/common_10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/app_confirm"
+                android:textSize="@dimen/tv_14_sp"/>
+
+            <Button
+                android:id="@id/subscription_exit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/app_cancle"
+                android:textSize="@dimen/tv_14_sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

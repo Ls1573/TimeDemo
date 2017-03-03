@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_"
+        >
+
+        <TextView
+            android:id="@id/subscription_cancl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/common_60dp"
+            android:padding="@dimen/common_14dp"
+            android:text="@string/subScription_cancle"
+            android:textColor="@color/black_01"
+            android:textSize="@dimen/tv_16_sp"/>
+
+        <TextView
+            android:id="@id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_38dp"
+            android:layout_below="@id/subscription_cancl"
+            android:layout_centerHorizontal="true"
+            android:background="#fff"
+            android:gravity="center"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:textColor="#9000"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_message"
+            android:background="#ccc"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_45dp"
+            android:layout_below="@id/line1"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_14dp"
+            android:paddingRight="@dimen/common_14dp">
+
+            <Button
+                android:id="@id/subscription_submit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_45dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/app_confirm"
+                android:textColor="@color/black_01"
+                android:textSize="@dimen/tv_14_sp"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#ccc"
+                />
+
+            <Button
+                android:id="@id/subscription_exit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_45dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/app_cancle"
+                android:textColor="@color/black_01"
+                android:textSize="@dimen/tv_14_sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_28dp"
+            android:layout_marginRight="@dimen/common_28dp"
+            android:layout_marginTop="@dimen/common_20dp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <com.time.memory.gui.sixGridImage.SixGridImageWriterView
+                android:id="@id/writer_grid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y160"
+                app:imgGap="2dp"/>
+
+            <com.time.memory.gui.WriterEditText
+                android:id="@id/writer_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/writer_grid"
+                android:background="@color/transparent"
+                android:gravity="left|top"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:minHeight="@dimen/common_100dp"
+                android:padding="@dimen/common_14dp"
+                android:textColor="@color/common_font_black"
+                android:textColorHint="@color/gray_A0"
+                android:textSize="@dimen/tv_14_sp"
+                app:hintText="@string/addmemory_hint"
+                app:imagewidth="@dimen/common_18dp"
+                app:textColor="@color/gray_A0"
+                app:textSize="@dimen/tv_14_sp"/>
+
+            <TextView
+                android:id="@id/writer_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_48dp"
+                android:layout_below="@id/writer_et"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_14dp"
+                android:text="2016.10.06"
+                android:textColor="@color/grey_9F"
+                android:textSize="@dimen/tv_14_sp"/>
+
+            <TextView
+                android:id="@id/writer_loc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_48dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/writer_et"
+                android:layout_marginRight="@dimen/common_14dp"
+                android:drawableLeft="@drawable/loc"
+                android:drawablePadding="@dimen/common_5dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/writer_loc_tv"
+                android:maxWidth="@dimen/common_100dp"
+                android:singleLine="true"
+                android:textColor="@color/grey_9F"
+                android:textColorHint="@color/grey_9F"
+                android:textSize="@dimen/tv_14_sp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@id/tag_input_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_48dp"
+        android:background="@color/grey_F8"
+        android:paddingLeft="@dimen/common_12dp"
+        android:paddingRight="@dimen/common_12dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@id/tag_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_6dp"
+            android:background="@drawable/memory_comment_bg"
+            android:hint="请输入标签"
+            android:imeOptions="actionSend"
+            android:paddingLeft="@dimen/common_6dp"
+            android:paddingRight="@dimen/common_6dp"
+            android:singleLine="true"
+            android:textColor="@color/common_font_black"
+            android:textColorHint="@color/black_27"
+            android:textSize="@dimen/tv_14_sp"
+            />
+    </RelativeLayout>
+</LinearLayout>

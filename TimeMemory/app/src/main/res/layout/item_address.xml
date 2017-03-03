@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@id/add_address_tv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_45dp"
+    android:layout_centerVertical="true"
+    android:background="@drawable/mine_ll"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/common_14dp"
+    android:singleLine="true"
+    android:textColor="@color/common_font_black"
+    android:textSize="@dimen/tv_16_sp"/>

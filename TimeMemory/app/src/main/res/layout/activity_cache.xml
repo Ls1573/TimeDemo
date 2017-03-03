@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_common_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_10dp"
+        android:background="@drawable/cache_bg"
+        android:paddingBottom="@dimen/common_30dp"
+        android:paddingTop="@dimen/common_20dp"
+        >
+
+        <TextView
+            android:id="@id/cache_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="已用空间"
+            android:textColor="@color/grey_8D"
+            android:textSize="@dimen/tv_12_sp"
+            />
+
+        <View
+            android:layout_width="@dimen/common_30dp"
+            android:layout_height="@dimen/common_divider_height"
+            android:layout_below="@id/cache_title_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common_8dp"
+            android:background="@color/grey_divider"
+            />
+
+        <TextView
+            android:id="@id/cache_cache_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cache_title_tv"
+            android:layout_marginTop="@dimen/common_18dp"
+            android:gravity="center"
+            android:text="68.3MB"
+            android:textColor="@color/black_01"
+            android:textSize="@dimen/tv_36_sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cache_cache_tv"
+            android:gravity="center"
+            android:text="占据手机0%存储空间"
+            android:textColor="@color/grey_8D"
+            android:textSize="@dimen/tv_12_sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_35dp"
+            android:layout_below="@id/cache_cache_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common_40dp"
+            android:background="@drawable/cache_sub_bg"
+            android:paddingLeft="@dimen/common_50dp"
+            android:paddingRight="@dimen/common_50dp"
+            android:text="清理空间"
+            android:textColor="@color/font_brown"
+            android:textSize="@dimen/common_14dp"
+
+            />
+    </RelativeLayout>
+</LinearLayout>
